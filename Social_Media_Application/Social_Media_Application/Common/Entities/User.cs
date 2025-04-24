@@ -12,7 +12,7 @@ namespace Social_Media_Application.Common.Entities
         public string? PhotoUrl { get; set; }
         public int FollowersCount { get; set; }
         public int FollowingCount { get; set; }
-        // Navigation properties
+
         public ICollection<Post>? Posts { get; set; }
         public ICollection<Comment>? Comments { get; set; }
         public ICollection<PostLike>? LikedPosts { get; set; }

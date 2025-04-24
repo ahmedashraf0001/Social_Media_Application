@@ -1,7 +1,12 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Social_Media_Application.BusinessLogic.Interfaces;
+using Social_Media_Application.BusinessLogic.Services;
 using Social_Media_Application.Common.Entities;
+using Social_Media_Application.Common.Utils;
 using Social_Media_Application.DataAccess.Data;
+using Social_Media_Application.DataAccess.Interfaces;
+using Social_Media_Application.DataAccess.Repositories;
 
 namespace Social_Media_Application.API
 {
@@ -18,6 +23,7 @@ namespace Social_Media_Application.API
 
             builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<SocialDBContext>();
 
+            builder.Services.AddProjectServices();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
