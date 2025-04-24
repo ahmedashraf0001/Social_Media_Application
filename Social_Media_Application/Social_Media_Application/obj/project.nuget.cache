@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UVNf9YoVJUE=",
+  "success": true,
+  "projectFilePath": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lyr1c\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\lyr1c\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
