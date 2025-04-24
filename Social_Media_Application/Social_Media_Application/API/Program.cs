@@ -1,11 +1,9 @@
-
-namespace Social_Media_Application
+namespace Social_Media_Application.API
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("mario");
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
