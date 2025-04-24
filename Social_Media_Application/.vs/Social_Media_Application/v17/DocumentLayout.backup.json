@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Program.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\Program.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Program.cs",
-              "RelativeToolTip": "Social_Media_Application\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Program.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T14:33:09.546Z",
               "EditorCaption": ""
