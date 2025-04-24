@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="API\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
@@ -23,10 +33,9 @@
     <Folder Include="BusinessLogic\Interfaces\" />
     <Folder Include="BusinessLogic\Services\" />
     <Folder Include="Common\DTOs\" />
-    <Folder Include="Common\Utils\" />
     <Folder Include="DataAccess\Interfaces\" />
-    <Folder Include="DataAccess\Data\" />
     <Folder Include="DataAccess\Repositories\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

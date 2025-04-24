@@ -1,11 +1,15 @@
-﻿namespace Social_Media_Application.Common.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Social_Media_Application.Common.Entities
 {
     public class UserFollow
     {
-        public int FollowerId { get; set; }
-        public User Follower { get; set; }
+        public string FollowerId { get; set; }
+        [ForeignKey(nameof(FollowerId))]
+        public User? Follower { get; set; }
 
-        public int FollowedId { get; set; }
-        public User Followed { get; set; }
+        public string FollowedId { get; set; }
+        [ForeignKey(nameof(FollowedId))]
+        public User? Followed { get; set; }
     }
 }
