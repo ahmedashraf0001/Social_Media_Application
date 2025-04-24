@@ -1,5 +1,3 @@
-G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\appsettings.Development.json
-G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\appsettings.json
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\Social_Media_Application.staticwebassets.endpoints.json
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\Social_Media_Application.exe
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\Social_Media_Application.deps.json
@@ -33,3 +31,5 @@ G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_A
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\obj\Debug\net9.0\Social_Media_Application.pdb
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\obj\Debug\net9.0\Social_Media_Application.genruntimeconfig.cache
 G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\obj\Debug\net9.0\ref\Social_Media_Application.dll
+G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\API\appsettings.Development.json
+G:\work\Coding\backend\,net api\Projects\Social_Media_Application\Social_Media_Application\Social_Media_Application\bin\Debug\net9.0\API\appsettings.json

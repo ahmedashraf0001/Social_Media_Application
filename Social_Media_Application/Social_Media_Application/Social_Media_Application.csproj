@@ -14,7 +14,6 @@
     <Folder Include="API\Controllers\" />
     <Folder Include="BusinessLogic\Interfaces\" />
     <Folder Include="BusinessLogic\Services\" />
-    <Folder Include="Common\Entities\" />
     <Folder Include="Common\DTOs\" />
     <Folder Include="Common\Utils\" />
     <Folder Include="DataAccess\Interfaces\" />
