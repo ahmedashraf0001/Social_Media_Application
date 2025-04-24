@@ -29,13 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\Controllers\" />
-    <Folder Include="BusinessLogic\Interfaces\" />
-    <Folder Include="BusinessLogic\Services\" />
-    <Folder Include="Common\DTOs\" />
-    <Folder Include="DataAccess\Interfaces\" />
-    <Folder Include="DataAccess\Repositories\" />
-    <Folder Include="Migrations\" />
+    <Folder Include="DataAccess\Data\Migrations\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>
