@@ -2,9 +2,8 @@
 {
     public class PostQueryOptions
     {
-        public bool WithLikedPosts { get; set; } = false;
-        public bool WithComments { get; set; } = false;
-        public bool WithUsers { get; set; } = false;
+        public bool IncludeLikedUsers { get; set; } = false;
+        public bool IncludeComments { get; set; } = false;
+        public bool IncludeAuthorDetails { get; set; } = false;
     }
-
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.BusinessLogic.Services;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
@@ -12,9 +13,9 @@ namespace Social_Media_Application.API.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
-        private readonly PostService _postService;
+        private readonly IPostService _postService;
 
-        public PostController(PostService postService)
+        public PostController(IPostService postService)
         {
             _postService = postService;
         }
@@ -24,7 +25,7 @@ namespace Social_Media_Application.API.Controllers
         /// </summary>
         [HttpPost]
         [Authorize]
-        public async Task<ActionResult<Post>> Create([FromBody] PostDTO post, IFormFile file)
+        public async Task<ActionResult<Post>> Create([FromForm] PostCreateDTO post, IFormFile? file)
         {
             try
             {
@@ -62,7 +63,7 @@ namespace Social_Media_Application.API.Controllers
         /// <summary>
         /// Fetches the feed of posts for a user.
         /// </summary>
-        [HttpGet("{userId:alpha}/{pageNumber:int}/{pageSize:int}")]
+        [HttpGet("{userId}/{pageNumber:int}/{pageSize:int}")]
         [Authorize]
         public async Task<ActionResult<List<PostDTO>>> Feed(string userId, int pageNumber, int pageSize = 12)
         {
@@ -87,12 +88,12 @@ namespace Social_Media_Application.API.Controllers
         /// </summary>
         [HttpGet("{postId:int}")]
         [Authorize]
-        public async Task<ActionResult<PostDTO>> GetById(int postId, [FromQuery] PostQueryOptions options)
+        public async Task<ActionResult<PostDTO>> GetById(int postId)
         {
             try
             {
                 var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var model = await _postService.GetPostByIdAsync(currentUserId, postId, options);
+                var model = await _postService.GetPostByIdAsync(currentUserId, postId, new PostQueryOptions());
                 return Ok(model);
             }
             catch (InvalidOperationException ex)
@@ -108,14 +109,14 @@ namespace Social_Media_Application.API.Controllers
         /// <summary>
         /// Fetches posts by a specific user.
         /// </summary>
-        [HttpGet("{userId:alpha}")]
+        [HttpGet("{userId}")]
         [Authorize]
-        public async Task<ActionResult<List<PostDTO>>> GetByUserId(string userId, [FromQuery] PostQueryOptions options)
+        public async Task<ActionResult<List<PostDTO>>> GetByUserId(string userId)
         {
             try
             {
                 var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var model = await _postService.GetPostsByUserIdAsync(currentUserId, userId, options);
+                var model = await _postService.GetPostsByUserIdAsync(currentUserId, userId, new PostQueryOptions());
                 return Ok(model);
             }
             catch (InvalidOperationException ex)
@@ -131,13 +132,13 @@ namespace Social_Media_Application.API.Controllers
         /// <summary>
         /// Updates an existing post.
         /// </summary>
-        [HttpPut("{postId:int}")]
+        [HttpPut]
         [Authorize]
-        public async Task<ActionResult> UpdatePostAsync(int postId, [FromBody] PostDTO postDTO, IFormFile file)
+        public async Task<ActionResult> UpdatePostAsync( [FromForm] PostUpdateDTO postDTO, IFormFile? file)
         {
             try
             {
-                await _postService.UpdatePostAsync(postId, postDTO, file);
+                await _postService.UpdatePostAsync(postDTO, file);
                 return Ok("Update Succeeded!");
             }
             catch (InvalidOperationException ex)
@@ -153,7 +154,7 @@ namespace Social_Media_Application.API.Controllers
         /// <summary>
         /// Toggles like for a post.
         /// </summary>
-        [HttpPut("{postId:int}/{userId:alpha}")]
+        [HttpPut("{postId:int}/{userId}")]
         [Authorize]
         public async Task<ActionResult> ToggleLike(int postId, string userId)
         {

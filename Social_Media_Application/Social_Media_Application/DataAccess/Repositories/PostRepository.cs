@@ -18,17 +18,17 @@ namespace Social_Media_Application.DataAccess.Repositories
         {
             IQueryable<Post> query = _set.Where(u => u.UserId == userId);
 
-            if (options.WithLikedPosts)
+            if (options.IncludeLikedUsers)
             {
                 query = query.Include(u => u.Likes);
             }
 
-            if (options.WithComments)
+            if (options.IncludeComments)
             {
                 query = query.Include(u => u.Comments);
             }
 
-            if (options.WithUsers)
+            if (options.IncludeAuthorDetails)
             {
                 query = query.Include(u => u.User);
             }
@@ -40,17 +40,17 @@ namespace Social_Media_Application.DataAccess.Repositories
         {
             IQueryable<Post> query = _set.Where(p => p.Id == Id);
 
-            if (options.WithLikedPosts)
+            if (options.IncludeLikedUsers)
             {
-                query = query.Include(u => u.Likes);
+                query = query.Include(u => u.Likes).ThenInclude(u => u.User);
             }
 
-            if (options.WithComments)
+            if (options.IncludeComments)
             {
                 query = query.Include(u => u.Comments);
             }
 
-            if (options.WithUsers)
+            if (options.IncludeAuthorDetails)
             {
                 query = query.Include(u => u.User);
             }
@@ -63,17 +63,17 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             if (options is PostQueryOptions postOptions)
             {
-                if (postOptions.WithLikedPosts)
+                if (postOptions.IncludeLikedUsers)
                 {
                     query = query.Include(p => p.Likes);
                 }
 
-                if (postOptions.WithComments)
+                if (postOptions.IncludeComments)
                 {
                     query = query.Include(p => p.Comments);
                 }
 
-                if (postOptions.WithUsers)
+                if (postOptions.IncludeAuthorDetails)
                 {
                     query = query.Include(p => p.User);
                 }
@@ -105,6 +105,8 @@ namespace Social_Media_Application.DataAccess.Repositories
             List<PostDTO> postsDTO = new List<PostDTO>();   
             foreach (var post in posts)
             {
+                bool isLikedByCurrentUser = await _context.postLikes
+                                                 .AnyAsync(l => l.PostId == post.Id && l.UserId == currentUserId);
                 PostDTO model = new PostDTO()
                 {
                     Id = post.Id,
@@ -116,7 +118,7 @@ namespace Social_Media_Application.DataAccess.Repositories
                     AuthorUsername = post.User.FirstName + " " + post.User.LastName,
                     LikeCount = post.LikesCount,
                     CommentCount = post.CommentsCount,
-                    IsLikedByCurrentUser = (post.UserId == currentUserId) ? true : false,
+                    IsLikedByCurrentUser = isLikedByCurrentUser
                 };
                 postsDTO.Add(model);
             }

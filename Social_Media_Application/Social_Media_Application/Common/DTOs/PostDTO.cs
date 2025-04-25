@@ -17,5 +17,14 @@ namespace Social_Media_Application.Common.DTOs
         public bool IsLikedByCurrentUser { get; set; }     
         public int CommentCount { get; set; }              
     }
-
+    public class PostCreateDTO
+    {
+        public string UserId { get; set; }
+        public string Content { get; set; }
+    }
+    public class PostUpdateDTO 
+    {
+        public int Id { get; set; }
+        public string Content { get; set; }
+    }
 }

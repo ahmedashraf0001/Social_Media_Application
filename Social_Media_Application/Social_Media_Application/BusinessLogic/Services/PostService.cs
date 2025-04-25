@@ -3,6 +3,7 @@ using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
 using Social_Media_Application.Common.Utils;
 using Social_Media_Application.DataAccess.Interfaces;
+using System;
 
 namespace Social_Media_Application.BusinessLogic.Services
 {
@@ -20,19 +21,39 @@ namespace Social_Media_Application.BusinessLogic.Services
             _mediaService = mediaService;
             _postLikeRepository = postLikeRepository;
         }
-        public async Task<Post> CreatePostAsync(PostDTO postDTO, IFormFile file)
+        public async Task<PostDTO> CreatePostAsync(PostCreateDTO postDTO, IFormFile? file)
         {
-            Post post = new Post() 
-            { 
+            string url = "N/A";
+            MediaType type = MediaType.None;
+
+            if (file != null)
+            {
+                (url, type) = await _mediaService.UploadMediaAsync(file);
+            }
+
+            Post post = new Post()
+            {
                 Content = postDTO.Content,
-                MediaType = postDTO.MediaType,
-                MediaUrl = postDTO.MediaUrl,
                 CreatedAt = DateTime.UtcNow,
                 UserId = postDTO.UserId,
+                MediaUrl = url,
+                MediaType = type
             };
+
             await _postRepository.AddAsync(post);
-            await _mediaService.UploadMediaAsync(file);
-            return post;
+
+            var model = await _postRepository.GetPostAsync(post.Id,new PostQueryOptions() { IncludeAuthorDetails = true });
+            PostDTO response = new PostDTO() 
+            { 
+                Id = model.Id,
+                Content = model.Content,
+                CreatedAt = DateTime.UtcNow,
+                UserId = model.UserId,
+                MediaUrl = model.MediaUrl,
+                MediaType = model.MediaType,
+                AuthorUsername = model.User.FirstName + " " + model.User.LastName,
+            };
+            return response;
         }
         public async Task DeletePostAsync(int postId)
         {
@@ -54,7 +75,7 @@ namespace Social_Media_Application.BusinessLogic.Services
         }
         public async Task<PostDTO> GetPostByIdAsync(string currentUserId, int postId, PostQueryOptions options)
         {
-            options.WithUsers = true;
+            options.IncludeAuthorDetails = true;
             var model = await _postRepository.GetPostAsync(postId, options);
             if (model != null) 
             {
@@ -77,7 +98,7 @@ namespace Social_Media_Application.BusinessLogic.Services
         }
         public async Task<List<PostDTO>> GetPostsByUserIdAsync(string currentUserId, string userId, PostQueryOptions options)
         {
-            options.WithUsers = true;
+            options.IncludeAuthorDetails = true;
             var model = await _postRepository.GetPostsByUserIdAsync(userId, options);
             List<PostDTO> posts = new List<PostDTO>();
             if (model.Count != 0)
@@ -103,24 +124,27 @@ namespace Social_Media_Application.BusinessLogic.Services
             }
             throw new InvalidOperationException(message: "Posts Not Found");
         }
-        public async Task UpdatePostAsync(int postId, PostDTO postDTO, IFormFile file)
+        public async Task UpdatePostAsync(PostUpdateDTO postDTO, IFormFile? file)
         {
-            var model = await _postRepository.GetByIdAsync(postId);
-            if (model != null)
+            var model = await _postRepository.GetByIdAsync(postDTO.Id);
+            if (model == null)
+                throw new InvalidOperationException("Post not found");
+
+            model.Content = postDTO.Content;
+
+            if (file != null)
             {
-                model.Id = postId;
-                model.Content = postDTO.Content;
-                model.MediaType = postDTO.MediaType;
-                if (model.MediaUrl != postDTO.MediaUrl)
-                {
+                if (!string.IsNullOrEmpty(model.MediaUrl))
                     await _mediaService.DeleteMediaAsync(model.MediaUrl);
-                    await _mediaService.UploadMediaAsync(file);
-                    model.MediaUrl = postDTO.MediaUrl;
-                }
-                await _postRepository.UpdateAsync(model);
+
+                (var url, var type) = await _mediaService.UploadMediaAsync(file);
+                model.MediaUrl = url;
+                model.MediaType = type;
             }
-            throw new InvalidOperationException(message: "Posts Not Found");
+
+            await _postRepository.UpdateAsync(model);
         }
+
         public async Task<bool> ToggleLikeAsync(int postId, string userId)
         {
             var post = await _postRepository.GetByIdAsync(postId);
@@ -133,14 +157,17 @@ namespace Social_Media_Application.BusinessLogic.Services
             {
                 await _postLikeRepository.RemoveLike(postId, userId);
                 post.LikesCount--;
+                await _postRepository.UpdateAsync(post);
                 return false;
             }
             else
             {
                 await _postLikeRepository.CreateLike(postId, userId);
                 post.LikesCount++;
+                await _postRepository.UpdateAsync(post);
                 return true;
             }
+            
         }
 
     }

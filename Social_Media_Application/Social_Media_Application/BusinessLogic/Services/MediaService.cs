@@ -1,20 +1,22 @@
 ﻿using Social_Media_Application.BusinessLogic.Interfaces;
+using Social_Media_Application.Common.Entities;
 
 namespace Social_Media_Application.BusinessLogic.Services
 {
     public class MediaService:IMediaService
     {
-        public async Task<string> UploadMediaAsync(IFormFile file)
+        public async Task<(string Url, MediaType Type)> UploadMediaAsync(IFormFile? file)
         {
             if (file == null || file.Length == 0)
-                return "N/A";
+                return ("N/A", MediaType.None); 
 
             var uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
 
             if (!Directory.Exists(uploadsPath))
                 Directory.CreateDirectory(uploadsPath);
 
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+            var extension = Path.GetExtension(file.FileName).ToLower();
+            var fileName = Guid.NewGuid() + extension;
             var filePath = Path.Combine(uploadsPath, fileName);
 
             using (var stream = new FileStream(filePath, FileMode.Create))
@@ -22,8 +24,12 @@ namespace Social_Media_Application.BusinessLogic.Services
                 await file.CopyToAsync(stream);
             }
 
-            return $"/uploads/{fileName}";
+            var mediaUrl = $"/uploads/{fileName}";
+            var mediaType = (extension == ".mp4" || extension == ".mov" || extension == ".avi") ? MediaType.Video : MediaType.Image;
+
+            return (mediaUrl, mediaType);
         }
+
         public async Task<string> DeleteMediaAsync(string mediaUrl)
         {
             if (string.IsNullOrEmpty(mediaUrl))

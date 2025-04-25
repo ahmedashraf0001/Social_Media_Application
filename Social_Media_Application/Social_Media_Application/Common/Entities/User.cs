@@ -5,12 +5,16 @@ namespace Social_Media_Application.Common.Entities
 {
     public class User : IdentityUser
     {
+        [Required]
         public string FirstName { get; set; }
+        [Required]
         public string LastName { get; set; }
         [StringLength(200)]
         public string? Bio { get; set; }
         public string? PhotoUrl { get; set; }
+        [Range(0, int.MaxValue)]
         public int FollowersCount { get; set; }
+        [Range(0, int.MaxValue)]
         public int FollowingCount { get; set; }
 
         public ICollection<Post>? Posts { get; set; }

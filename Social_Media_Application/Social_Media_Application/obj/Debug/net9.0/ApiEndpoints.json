@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "Social_Media_Application.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Social_Media_Application.Common.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Social_Media_Application.Common.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
     "Method": "Create",
     "RelativePath": "api/Post",
@@ -8,9 +40,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "post",
-        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
-        "IsRequired": true
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
       },
       {
         "Name": "file",
@@ -29,6 +66,32 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "UpdatePostAsync",
+    "RelativePath": "api/Post",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
@@ -58,21 +121,6 @@
         "Name": "postId",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "WithLikedPosts",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "WithComments",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "WithUsers",
-        "Type": "System.Boolean",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -86,32 +134,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "UpdatePostAsync",
-    "RelativePath": "api/Post/{postId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "postId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "postDTO",
-        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
@@ -146,21 +168,6 @@
         "Name": "userId",
         "Type": "System.String",
         "IsRequired": true
-      },
-      {
-        "Name": "WithLikedPosts",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "WithComments",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "WithUsers",
-        "Type": "System.Boolean",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": [

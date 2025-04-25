@@ -1,12 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Social_Media_Application.Common.Entities
 {
     public enum MediaType
     {
         Video,
-        Image
+        Image,
+        None
     }
     public class Post
     {
@@ -17,7 +19,11 @@ namespace Social_Media_Application.Common.Entities
         public string Content { get; set; }
         public string? MediaUrl { get; set; }
         public MediaType? MediaType { get; set; }
+        [Range(0, int.MaxValue)]
+
         public int LikesCount { get; set; }
+        [Range(0, int.MaxValue)]
+
         public int CommentsCount { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
