@@ -2,5 +2,7 @@
 {
     public interface IMediaService
     {
+        Task<string> UploadMediaAsync(IFormFile file);
+        Task<string> DeleteMediaAsync(string mediaUrl);
     }
 }

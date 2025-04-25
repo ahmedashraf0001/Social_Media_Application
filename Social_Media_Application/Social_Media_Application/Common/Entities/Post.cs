@@ -3,6 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Social_Media_Application.Common.Entities
 {
+    public enum MediaType
+    {
+        Video,
+        Image
+    }
     public class Post
     {
         [Key]
@@ -10,7 +15,8 @@ namespace Social_Media_Application.Common.Entities
 
         [StringLength(500)]
         public string Content { get; set; }
-
+        public string? MediaUrl { get; set; }
+        public MediaType? MediaType { get; set; }
         public int LikesCount { get; set; }
         public int CommentsCount { get; set; }
 
@@ -24,7 +30,6 @@ namespace Social_Media_Application.Common.Entities
         public ICollection<Comment>? Comments { get; set; }
         public ICollection<PostLike>? Likes { get; set; }
 
-        public ICollection<Media>? Media { get; set; }
     }
 
 }

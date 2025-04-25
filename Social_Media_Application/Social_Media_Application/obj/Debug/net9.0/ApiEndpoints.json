@@ -1,1 +1,214 @@
-[]
+[
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "Create",
+    "RelativePath": "api/Post",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "post",
+        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.Entities.Post",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "Delete",
+    "RelativePath": "api/Post/{postId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "GetById",
+    "RelativePath": "api/Post/{postId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "WithLikedPosts",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "WithComments",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "WithUsers",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "UpdatePostAsync",
+    "RelativePath": "api/Post/{postId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "postDTO",
+        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "ToggleLike",
+    "RelativePath": "api/Post/{postId}/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/Post/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "WithLikedPosts",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "WithComments",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "WithUsers",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.PostDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "Feed",
+    "RelativePath": "api/Post/{userId}/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.PostDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

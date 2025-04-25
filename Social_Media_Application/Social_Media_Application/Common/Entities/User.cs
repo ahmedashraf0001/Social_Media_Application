@@ -8,7 +8,7 @@ namespace Social_Media_Application.Common.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [StringLength(200)]
-        public string Bio { get; set; }
+        public string? Bio { get; set; }
         public string? PhotoUrl { get; set; }
         public int FollowersCount { get; set; }
         public int FollowingCount { get; set; }

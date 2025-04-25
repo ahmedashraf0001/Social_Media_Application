@@ -21,13 +21,13 @@ namespace Social_Media_Application.DataAccess.Repositories
             await SaveChangesAsync();
         }
 
-        public virtual async Task Delete(T entity)
+        public virtual async Task DeleteAsync(T entity)
         {
             _set.Remove(entity);
             await SaveChangesAsync();
         }
 
-        public virtual async Task<List<T>> GetAllAsync(UserQueryOptions options)
+        public virtual async Task<List<T>> GetAllAsync(object options)
         {
             return await _set.ToListAsync();
         }
@@ -42,7 +42,7 @@ namespace Social_Media_Application.DataAccess.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public virtual async Task Update(T entity)
+        public virtual async Task UpdateAsync(T entity)
         {
             _context.Update(entity);
             await SaveChangesAsync();

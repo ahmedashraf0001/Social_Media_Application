@@ -1,12 +1,213 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\common\\utils\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\common\\utils\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\dataaccess\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\dataaccess\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\dataaccess\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\dataaccess\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\dataaccess\\repositories\\postlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\dataaccess\\repositories\\postlikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\social_media_application\\social_media_application\\social_media_application\\common\\utils\\postqueryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\common\\utils\\postqueryoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 326,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Utils\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Common\\Utils\\ServiceCollectionExtension.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Utils\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "Social_Media_Application\\Common\\Utils\\ServiceCollectionExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:49:19.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Interfaces\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\DataAccess\\Interfaces\\IPostRepository.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Interfaces\\IPostRepository.cs",
+              "RelativeToolTip": "Social_Media_Application\\DataAccess\\Interfaces\\IPostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:22:52.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\DataAccess\\Interfaces\\IRepository.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Social_Media_Application\\DataAccess\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:24:46.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PostQueryOptions.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Utils\\PostQueryOptions.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Common\\Utils\\PostQueryOptions.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Utils\\PostQueryOptions.cs",
+              "RelativeToolTip": "Social_Media_Application\\Common\\Utils\\PostQueryOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:22:22.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\PostService.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\PostService.cs",
+              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\PostService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwIIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:01:40.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Interfaces\\IPostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:25:14.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostLikeRepository.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\PostLikeRepository.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\DataAccess\\Repositories\\PostLikeRepository.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\PostLikeRepository.cs",
+              "RelativeToolTip": "Social_Media_Application\\DataAccess\\Repositories\\PostLikeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:32:50.077Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 424,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Properties\\launchSettings.json",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Properties\\launchSettings.json*",
+              "RelativeToolTip": "Social_Media_Application\\Properties\\launchSettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-25T18:51:10.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Program.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:48:56.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\DataAccess\\Repositories\\PostRepository.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "Social_Media_Application\\DataAccess\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA9wDYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T18:46:23.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAALQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:36:27.42Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
