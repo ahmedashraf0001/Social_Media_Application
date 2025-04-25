@@ -10,12 +10,13 @@ namespace Social_Media_Application.Common.Utils
     {
         public static IServiceCollection AddProjectServices(this IServiceCollection services)
         {
-            services.AddScoped<IRepository<User>, UserRepository>();
-            services.AddScoped<IRepository<Post>, PostRepository>();
-            services.AddScoped<IRepository<Comment>, CommentRepository>();
-            services.AddScoped<IRepository<Media>, MediaRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<ICommentRepository, CommentRepository>();
+            services.AddScoped<IPostLikeRepository, PostLikeRepository>();
+            services.AddScoped<IUserFollowRepository, UserFollowRepository>();
 
-            services.AddScoped<IAuthSerivce, AuthService>();
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<ICommentService, CommentService>();

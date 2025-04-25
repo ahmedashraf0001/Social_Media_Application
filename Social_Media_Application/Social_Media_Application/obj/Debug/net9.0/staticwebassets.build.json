@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "wLnBV7nhA6V3ok/rpI8IBOM1+JdridOw69C49QBeeQQ=",
+  "Hash": "KmHYM25YMV/EO5NinGnYYwFE417HRty38tfkHiCLP6A=",
   "Source": "Social_Media_Application",
   "BasePath": "_content/Social_Media_Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Social_Media_Application\\wwwroot",
+      "Source": "Social_Media_Application",
+      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.1mdjwq8k67.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 20:33:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 20:33:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    }
+  ]
 }

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Social_Media_Application.DataAccess.Repositories
 {
-    public class UserRepository : Repository<User>
+    public class UserRepository : Repository<User>, IUserRepository
     {
         private readonly SocialDBContext _context;
 
@@ -15,7 +15,39 @@ namespace Social_Media_Application.DataAccess.Repositories
         {
             _context = context;
         }
-        public async Task<User?> GetByUsernameAsync(object username, UserQueryOptions options)
+        public async Task<User> GetUserAsync(string Id, UserQueryOptions options)
+        {
+            IQueryable<User> query = _set.Where(p => p.Id == Id);
+
+
+            if (options.WithPosts)
+            {
+                query = query.Include(u => u.Posts);
+            }
+
+            if (options.WithComments)
+            {
+                query = query.Include(u => u.Comments);
+            }
+
+            if (options.WithLikedPosts)
+            {
+                query = query.Include(u => u.LikedPosts);
+            }
+
+            if (options.WithFollowers)
+            {
+                query = query.Include(u => u.Followers);
+            }
+
+            if (options.WithFollowing)
+            {
+                query = query.Include(u => u.Following);
+            }
+
+            return await query.FirstOrDefaultAsync();
+        }
+        public async Task<User?> GetByUsernameAsync(string username, UserQueryOptions options)
         {
             IQueryable<User> query = _set.Where(u => u.UserName == username);
 
@@ -47,37 +79,38 @@ namespace Social_Media_Application.DataAccess.Repositories
             return await query.FirstOrDefaultAsync();
         }
 
-        public override async Task<List<User>> GetAllAsync(UserQueryOptions options)
+        public override async Task<List<User>> GetAllAsync(object options)
         {
             IQueryable<User> query = _set;
 
-            if (options.WithPosts)
-            {
-                query = query.Include(u => u.Posts);
-            }
+            if (options is UserQueryOptions UserOptions) 
+            { 
+                if (UserOptions.WithPosts)
+                {
+                    query = query.Include(u => u.Posts);
+                }
 
-            if (options.WithComments)
-            {
-                query = query.Include(u => u.Comments);
-            }
+                if (UserOptions.WithComments)
+                {
+                    query = query.Include(u => u.Comments);
+                }
 
-            if (options.WithLikedPosts)
-            {
-                query = query.Include(u => u.LikedPosts);
-            }
+                if (UserOptions.WithLikedPosts)
+                {
+                    query = query.Include(u => u.LikedPosts);
+                }
 
-            if (options.WithFollowers)
-            {
-                query = query.Include(u => u.Followers);
-            }
+                if (UserOptions.WithFollowers)
+                {
+                    query = query.Include(u => u.Followers);
+                }
 
-            if (options.WithFollowing)
-            {
-                query = query.Include(u => u.Following);
+                if (UserOptions.WithFollowing)
+                {
+                    query = query.Include(u => u.Following);
+                }
             }
-
             return await query.ToListAsync();
         }
-
     }
 }

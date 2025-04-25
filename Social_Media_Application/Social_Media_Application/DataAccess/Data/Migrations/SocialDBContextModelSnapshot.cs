@@ -190,7 +190,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(5145),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 949, DateTimeKind.Utc).AddTicks(1198),
                             PostId = 1,
                             Text = "Great post, John!",
                             UserId = "2"
@@ -198,7 +198,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(5718),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 949, DateTimeKind.Utc).AddTicks(1905),
                             PostId = 3,
                             Text = "Love this, Alex!",
                             UserId = "1"
@@ -206,7 +206,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(5719),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 949, DateTimeKind.Utc).AddTicks(1907),
                             PostId = 2,
                             Text = "Amazing content, Jane!",
                             UserId = "3"
@@ -235,6 +235,9 @@ namespace Social_Media_Application.Migrations
                     b.Property<int>("LikesCount")
                         .HasColumnType("int");
 
+                    b.Property<int?>("MediaType")
+                        .HasColumnType("int");
+
                     b.Property<string>("MediaUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -254,7 +257,7 @@ namespace Social_Media_Application.Migrations
                             Id = 1,
                             CommentsCount = 0,
                             Content = "This is John's first post!",
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(3828),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 948, DateTimeKind.Utc).AddTicks(9854),
                             LikesCount = 0,
                             MediaUrl = "/images/post1.jpg",
                             UserId = "1"
@@ -264,7 +267,7 @@ namespace Social_Media_Application.Migrations
                             Id = 2,
                             CommentsCount = 0,
                             Content = "Jane's first post!",
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(4419),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 949, DateTimeKind.Utc).AddTicks(624),
                             LikesCount = 0,
                             MediaUrl = "/images/post2.jpg",
                             UserId = "2"
@@ -274,7 +277,7 @@ namespace Social_Media_Application.Migrations
                             Id = 3,
                             CommentsCount = 0,
                             Content = "Hello, I'm Alex! Here's my first post.",
-                            CreatedAt = new DateTime(2025, 4, 24, 16, 34, 46, 777, DateTimeKind.Utc).AddTicks(4420),
+                            CreatedAt = new DateTime(2025, 4, 25, 19, 16, 22, 949, DateTimeKind.Utc).AddTicks(625),
                             LikesCount = 0,
                             MediaUrl = "/images/post3.jpg",
                             UserId = "3"
@@ -322,7 +325,6 @@ namespace Social_Media_Application.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -405,7 +407,7 @@ namespace Social_Media_Application.Migrations
                             Id = "1",
                             AccessFailedCount = 0,
                             Bio = "Hello, I am John!",
-                            ConcurrencyStamp = "7436d681-4d55-4693-aa19-ff4c7222958b",
+                            ConcurrencyStamp = "00c42011-ba8c-481d-8c76-441f76170123",
                             Email = "john@example.com",
                             EmailConfirmed = false,
                             FirstName = "john",
@@ -415,7 +417,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/john.jpg",
-                            SecurityStamp = "6625c37d-ea83-4f95-aad5-62b78e13b279",
+                            SecurityStamp = "2d17db96-952d-4b84-811d-f55d6bc72105",
                             TwoFactorEnabled = false,
                             UserName = "john_doe"
                         },
@@ -424,7 +426,7 @@ namespace Social_Media_Application.Migrations
                             Id = "2",
                             AccessFailedCount = 0,
                             Bio = "Hey, I am Jane!",
-                            ConcurrencyStamp = "4576004a-d62c-4aa3-a408-760ad2f13643",
+                            ConcurrencyStamp = "0988ec96-0822-4ed3-82f0-0ae2c3881f85",
                             Email = "jane@example.com",
                             EmailConfirmed = false,
                             FirstName = "jane",
@@ -434,7 +436,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/jane.jpg",
-                            SecurityStamp = "f36d3ccf-4b5d-489c-b111-7e954f083d45",
+                            SecurityStamp = "83da4e8d-e86c-4af5-97b7-ccc5c76e8a3a",
                             TwoFactorEnabled = false,
                             UserName = "jane_smith"
                         },
@@ -443,7 +445,7 @@ namespace Social_Media_Application.Migrations
                             Id = "3",
                             AccessFailedCount = 0,
                             Bio = "Alex here, love to share posts!",
-                            ConcurrencyStamp = "b8c503ba-4dc1-433e-88f4-852b9f682909",
+                            ConcurrencyStamp = "1930c9b2-37c0-40d4-b18c-0bb7a51d980b",
                             Email = "alex@example.com",
                             EmailConfirmed = false,
                             FirstName = "alex",
@@ -453,7 +455,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/alex.jpg",
-                            SecurityStamp = "dad6c1fb-b205-42c2-9b13-55204bd582eb",
+                            SecurityStamp = "6ab63bd4-a576-4891-a30d-37560386e7cd",
                             TwoFactorEnabled = false,
                             UserName = "alex_king"
                         });

@@ -7,6 +7,5 @@
         public bool WithLikedPosts { get; set; } = false;
         public bool WithFollowers { get; set; } = false;
         public bool WithFollowing { get; set; } = false;
-        public bool WithUsers { get; set; } = false;
     }
 }

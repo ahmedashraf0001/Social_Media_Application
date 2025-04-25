@@ -2,7 +2,7 @@
 
 namespace Social_Media_Application.BusinessLogic.Interfaces
 {
-    public interface IAuthSerivce
+    public interface IAuthService
     {
         Task RegisterUserAsync(RegisterDto registerDto);
         Task<TokenResponseDTO> LoginAsync(LoginDto loginDto);
