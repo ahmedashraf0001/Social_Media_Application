@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "wLnBV7nhA6V3ok/rpI8IBOM1+JdridOw69C49QBeeQQ=",
+  "Hash": "+PPrWaZS0Ipg9NXQga+i17ZJauPNDDlhVcYbGMVdy+Q=",
   "Source": "Social_Media_Application",
   "BasePath": "_content/Social_Media_Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Social_Media_Application\\wwwroot",
+      "Source": "Social_Media_Application",
+      "ContentRoot": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

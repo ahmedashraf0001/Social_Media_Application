@@ -16,6 +16,11 @@ namespace Social_Media_Application.BusinessLogic.Services
             throw new NotImplementedException();
         }
 
+        public Task<List<PostDTO>> GenerateFeed(string userId, int pageNumber, int pageSize = 12)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<PostDTO> GetPostByIdAsync(int postId)
         {
             throw new NotImplementedException();

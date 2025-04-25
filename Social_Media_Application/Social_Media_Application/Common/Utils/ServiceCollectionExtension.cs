@@ -13,13 +13,11 @@ namespace Social_Media_Application.Common.Utils
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Post>, PostRepository>();
             services.AddScoped<IRepository<Comment>, CommentRepository>();
-            services.AddScoped<IRepository<Media>, MediaRepository>();
 
-            services.AddScoped<IAuthSerivce, AuthService>();
+            services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<ICommentService, CommentService>();
-            services.AddScoped<IMediaService, MediaService>();
 
             return services;
         }
