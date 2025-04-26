@@ -184,7 +184,7 @@ namespace Social_Media_Application.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("comments");
+                    b.ToTable("comments", (string)null);
 
                     b.HasData(
                         new
@@ -249,7 +249,7 @@ namespace Social_Media_Application.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("posts");
+                    b.ToTable("posts", (string)null);
 
                     b.HasData(
                         new
@@ -296,7 +296,7 @@ namespace Social_Media_Application.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("postLikes");
+                    b.ToTable("postLikes", (string)null);
 
                     b.HasData(
                         new
@@ -473,7 +473,7 @@ namespace Social_Media_Application.Migrations
 
                     b.HasIndex("FollowedId");
 
-                    b.ToTable("userFollows");
+                    b.ToTable("userFollows", (string)null);
 
                     b.HasData(
                         new

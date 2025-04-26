@@ -134,7 +134,7 @@ namespace Social_Media_Application.API.Controllers
         /// </summary>
         [HttpPut]
         [Authorize]
-        public async Task<ActionResult> UpdatePostAsync( [FromForm] PostUpdateDTO postDTO, IFormFile? file)
+        public async Task<ActionResult> UpdatePostAsync([FromForm] PostUpdateDTO postDTO, IFormFile? file)
         {
             try
             {
@@ -174,5 +174,25 @@ namespace Social_Media_Application.API.Controllers
                 return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
             }
         }
+
+        [HttpGet("{postId:int}/likes/{pageNumber:int}/{pageSize:int}")]
+        [Authorize]
+        public async Task<ActionResult<List<UserLikeDTO>>> GetPostLikes(int postId, int pageNumber, int pageSize = 12)
+        {
+            try
+            {
+                var model = await _postService.GetPostLikesAsync(postId, pageNumber, pageSize);
+                return Ok(model);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
+            }
+        }
     }
 }
+    

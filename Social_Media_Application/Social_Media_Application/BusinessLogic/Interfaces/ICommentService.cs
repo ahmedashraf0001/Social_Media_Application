@@ -5,9 +5,9 @@ namespace Social_Media_Application.BusinessLogic.Interfaces
 {
     public interface ICommentService
     {
-        Task<CommentDTO> AddCommentAsync(CommentDTO commentDTO);
-        Task<IdentityResult> UpdateCommentAsync(int commentId, CommentDTO commentDTO);
-        Task<IdentityResult> DeleteCommentAsync(int commentId);
+        Task<CommentDTO> AddCommentAsync(string userId, CreateCommentDTO createCommentDTO);
+        Task UpdateCommentAsync(int commentId, UpdateCommentDTO updateCommentDTO);
+        Task DeleteCommentAsync(int commentId);
         Task<List<CommentDTO>> GetCommentsByPostIdAsync(int postId);
     }
 }

@@ -169,6 +169,19 @@ namespace Social_Media_Application.BusinessLogic.Services
             }
             
         }
+        public async Task<List<UserLikeDTO>> GetPostLikesAsync(int postId, int pageNumber, int pageSize = 12)
+        {
+            var post = await _postRepository.GetByIdAsync(postId);
+            if (post == null)
+                throw new InvalidOperationException("Post not found");
+
+            var likes = await _postLikeRepository.GetPostLikesWithUsersAsync(postId, pageNumber, pageSize);
+
+            if (likes.Count == 0)
+                return new List<UserLikeDTO>();
+
+            return likes;
+        }
 
     }
 }

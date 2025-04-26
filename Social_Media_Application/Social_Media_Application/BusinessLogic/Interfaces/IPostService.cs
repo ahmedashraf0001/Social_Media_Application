@@ -14,5 +14,6 @@ namespace Social_Media_Application.BusinessLogic.Interfaces
         Task DeletePostAsync(int postId);
         Task<bool> ToggleLikeAsync(int postId, string userId);
         Task<List<PostDTO>> GenerateFeedAsync(string currentUserId, string userId, int pageNumber, int pageSize = 12);
+        Task<List<UserLikeDTO>> GetPostLikesAsync(int postId, int pageNumber, int pageSize = 12);
     }
 }

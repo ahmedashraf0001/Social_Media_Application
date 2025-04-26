@@ -25,7 +25,21 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             if (options.WithUsers)
             {
-                query = query.Include(u => u.User);
+                query = query.Include(u => u.User).Select(c => new Comment
+                {
+                    Id = c.Id,
+                    Text = c.Text,
+                    CreatedAt = c.CreatedAt,
+                    PostId = c.PostId,
+                    UserId = c.UserId,
+                    User = new User
+                    {
+                        Id = c.User.Id,
+                        FirstName = c.User.FirstName,
+                        LastName = c.User.LastName,
+                        PhotoUrl = c.User.PhotoUrl
+                    }
+                });
             }
 
             return await query.ToListAsync();
