@@ -79,38 +79,25 @@ namespace Social_Media_Application.DataAccess.Repositories
             return await query.FirstOrDefaultAsync();
         }
 
-        public override async Task<List<User>> GetAllAsync(object options)
+        public async Task<List<User>> GetAllAsync(int pageNumber, int pageSize = 12)
         {
-            IQueryable<User> query = _set;
-
-            if (options is UserQueryOptions UserOptions) 
-            { 
-                if (UserOptions.WithPosts)
+            var query = await _set
+                .Select(u => new User
                 {
-                    query = query.Include(u => u.Posts);
-                }
-
-                if (UserOptions.WithComments)
-                {
-                    query = query.Include(u => u.Comments);
-                }
-
-                if (UserOptions.WithLikedPosts)
-                {
-                    query = query.Include(u => u.LikedPosts);
-                }
-
-                if (UserOptions.WithFollowers)
-                {
-                    query = query.Include(u => u.Followers);
-                }
-
-                if (UserOptions.WithFollowing)
-                {
-                    query = query.Include(u => u.Following);
-                }
-            }
-            return await query.ToListAsync();
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    PhotoUrl = u.PhotoUrl,
+                    FollowersCount = u.FollowersCount,
+                    FollowingCount = u.FollowingCount,
+                })
+                .ToListAsync();
+            var pagedResult = query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            return pagedResult;
         }
         public async Task DeleteUserAsync(string userId)
         {
@@ -130,6 +117,31 @@ namespace Social_Media_Application.DataAccess.Repositories
                 }
             }
             await _context.SaveChangesAsync();
+        }
+        public async Task<List<User>> SearchUsersAsync(string searchTerm, int pageNumber, int pageSize = 12)
+        {
+            var query = new List<User>();
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                return query;
+            }
+            query = await _set
+                .Where(u => u.UserName.Contains(searchTerm) || (u.FirstName+" "+u.LastName).Contains(searchTerm)).Select(u => new User
+                {
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    PhotoUrl = u.PhotoUrl,
+                    FollowersCount = u.FollowersCount,
+                    FollowingCount = u.FollowingCount,
+                })
+                .ToListAsync();
+            var pagedResult = query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+            return pagedResult;
         }
     }
 }

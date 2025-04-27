@@ -7,7 +7,8 @@ namespace Social_Media_Application.DataAccess.Interfaces
     {
         Task<User> GetUserAsync(string Id, UserQueryOptions options);
         Task<User?> GetByUsernameAsync(string username, UserQueryOptions options);
-
+        Task<List<User>> SearchUsersAsync(string searchTerm, int pageNumber, int pageSize = 12);
+        Task<List<User>> GetAllAsync(int pageNumber, int pageSize = 12);
         Task DeleteUserAsync(string userId);
     }
 }

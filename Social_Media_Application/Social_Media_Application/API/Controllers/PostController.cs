@@ -25,11 +25,11 @@ namespace Social_Media_Application.API.Controllers
         /// </summary>
         [HttpPost]
         [Authorize]
-        public async Task<ActionResult<Post>> Create([FromForm] PostCreateDTO post, IFormFile? file)
+        public async Task<ActionResult<Post>> Create([FromForm] PostCreateDTO post)
         {
             try
             {
-                var model = await _postService.CreatePostAsync(post, file);
+                var model = await _postService.CreatePostAsync(post);
                 return Ok(model);
             }
             catch (Exception ex)
@@ -134,11 +134,11 @@ namespace Social_Media_Application.API.Controllers
         /// </summary>
         [HttpPut]
         [Authorize]
-        public async Task<ActionResult> UpdatePostAsync([FromForm] PostUpdateDTO postDTO, IFormFile? file)
+        public async Task<ActionResult> UpdatePostAsync([FromForm] PostUpdateDTO postDTO)
         {
             try
             {
-                await _postService.UpdatePostAsync(postDTO, file);
+                await _postService.UpdatePostAsync(postDTO);
                 return Ok("Update Succeeded!");
             }
             catch (InvalidOperationException ex)
