@@ -112,5 +112,24 @@ namespace Social_Media_Application.DataAccess.Repositories
             }
             return await query.ToListAsync();
         }
+        public async Task DeleteUserAsync(string userId)
+        {
+            var affectedConversations = await _context.conversations
+                .Where(c => c.User1Id == userId || c.User2Id == userId)
+                .ToListAsync();
+
+            foreach (var conversation in affectedConversations)
+            {
+                bool otherUserExists = conversation.User1Id == userId
+                    ? await _context.Users.AnyAsync(u => u.Id == conversation.User2Id)
+                    : await _context.Users.AnyAsync(u => u.Id == conversation.User1Id);
+
+                if (!otherUserExists)
+                {
+                    _context.conversations.Remove(conversation);
+                }
+            }
+            await _context.SaveChangesAsync();
+        }
     }
 }
