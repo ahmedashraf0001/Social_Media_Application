@@ -23,5 +23,11 @@ namespace Social_Media_Application.Common.Entities
 
         public ICollection<UserFollow>? Followers { get; set; }
         public ICollection<UserFollow>? Following { get; set; }
+
+        public ICollection<Conversation>? ConversationsInitiated { get; set; }
+        public ICollection<Conversation>? ConversationsReceived { get; set; }
+
+        public ICollection<Message>? SentMessages { get; set; }
+        public ICollection<Message>? ReceivedMessages { get; set; }
     }
 }

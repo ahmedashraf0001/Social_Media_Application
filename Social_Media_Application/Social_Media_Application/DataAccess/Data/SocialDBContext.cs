@@ -16,6 +16,9 @@ namespace Social_Media_Application.DataAccess.Data
         public DbSet<Comment> comments { get; set; }
         public DbSet<PostLike> postLikes { get; set; }
         public DbSet<UserFollow> userFollows { get; set; }
+        public DbSet<Conversation> conversations { get; set; }
+        public DbSet<Message> messages { get; set; }
+
         public SocialDBContext()
         { }
         public SocialDBContext(DbContextOptions<SocialDBContext> options, IConfiguration _configuration) :base(options)
@@ -78,9 +81,37 @@ namespace Social_Media_Application.DataAccess.Data
                 .HasForeignKey(c => c.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            builder.Entity<Conversation>()
+                .HasOne(c => c.User1)
+                .WithMany(u => u.ConversationsInitiated)
+                .HasForeignKey(c => c.User1Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Conversation>()
+                .HasOne(c => c.User2)
+                .WithMany(u => u.ConversationsReceived)
+                .HasForeignKey(c => c.User2Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Message>()
+                .HasOne(m => m.Conversation)
+                .WithMany(c => c.Messages)
+                .HasForeignKey(m => m.ConversationId)
+                .OnDelete(DeleteBehavior.Cascade); 
+
+            builder.Entity<Message>()
+                .HasOne(m => m.Sender)
+                .WithMany(u => u.SentMessages)
+                .HasForeignKey(m => m.SenderId)
+                .OnDelete(DeleteBehavior.NoAction); 
+
+            builder.Entity<Message>()
+                .HasOne(m => m.Receiver)
+                .WithMany(u => u.ReceivedMessages)
+                .HasForeignKey(m => m.ReceiverId)
+                .OnDelete(DeleteBehavior.NoAction); 
 
             DatabaseSeeder.Seed(builder);
-
         }
     }
 }

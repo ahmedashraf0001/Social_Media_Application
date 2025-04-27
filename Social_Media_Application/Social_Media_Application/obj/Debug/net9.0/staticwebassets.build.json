@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UsuuXw9gAUP0BnOAEiKYUrLUqgzn0swtNBsWgikOuZs=",
+  "Hash": "okNQn+ZhngBo3GDDK/Dvae51varY8ftmBTwqs2oxwso=",
   "Source": "Social_Media_Application",
   "BasePath": "_content/Social_Media_Application",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Social_Media_Application\\wwwroot",
       "Source": "Social_Media_Application",
-      "ContentRoot": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -41,7 +41,7 @@
   "Endpoints": [
     {
       "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.1mdjwq8k67.png",
-      "AssetFile": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 21:15:44 GMT"
+          "Value": "Sat, 26 Apr 2025 16:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -86,7 +86,7 @@
     },
     {
       "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png",
-      "AssetFile": "C:\\Users\\hesha\\Documents\\Api_Project\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -107,7 +107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 25 Apr 2025 21:15:44 GMT"
+          "Value": "Sat, 26 Apr 2025 16:35:13 GMT"
         },
         {
           "Name": "Cache-Control",
