@@ -21,14 +21,14 @@ namespace Social_Media_Application.BusinessLogic.Services
             _mediaService = mediaService;
             _postLikeRepository = postLikeRepository;
         }
-        public async Task<PostDTO> CreatePostAsync(PostCreateDTO postDTO, IFormFile? file)
+        public async Task<PostDTO> CreatePostAsync(PostCreateDTO postDTO)
         {
             string url = "N/A";
             MediaType type = MediaType.None;
 
-            if (file != null)
+            if (postDTO.Media != null)
             {
-                (url, type) = await _mediaService.UploadMediaAsync(file);
+                (url, type) = await _mediaService.UploadMediaAsync(postDTO.Media);
             }
 
             Post post = new Post()
@@ -42,9 +42,9 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             await _postRepository.AddAsync(post);
 
-            var model = await _postRepository.GetPostAsync(post.Id,new PostQueryOptions() { IncludeAuthorDetails = true });
-            PostDTO response = new PostDTO() 
-            { 
+            var model = await _postRepository.GetPostAsync(post.Id, new PostQueryOptions() { IncludeAuthorDetails = true });
+            PostDTO response = new PostDTO()
+            {
                 Id = model.Id,
                 Content = model.Content,
                 CreatedAt = DateTime.UtcNow,
@@ -124,7 +124,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             }
             throw new InvalidOperationException(message: "Posts Not Found");
         }
-        public async Task UpdatePostAsync(PostUpdateDTO postDTO, IFormFile? file)
+        public async Task UpdatePostAsync(PostUpdateDTO postDTO)
         {
             var model = await _postRepository.GetByIdAsync(postDTO.Id);
             if (model == null)
@@ -132,12 +132,12 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             model.Content = postDTO.Content;
 
-            if (file != null)
+            if (postDTO.Media != null)
             {
                 if (!string.IsNullOrEmpty(model.MediaUrl))
                     await _mediaService.DeleteMediaAsync(model.MediaUrl);
 
-                (var url, var type) = await _mediaService.UploadMediaAsync(file);
+                (var url, var type) = await _mediaService.UploadMediaAsync(postDTO.Media);
                 model.MediaUrl = url;
                 model.MediaType = type;
             }
