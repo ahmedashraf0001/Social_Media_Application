@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Data;
 using Social_Media_Application.DataAccess.Interfaces;
 

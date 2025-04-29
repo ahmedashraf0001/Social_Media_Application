@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Data;
 using Social_Media_Application.DataAccess.Interfaces;
 using System.Collections.Generic;
@@ -102,14 +102,14 @@ namespace Social_Media_Application.DataAccess.Repositories
         public async Task DeleteUserAsync(string userId)
         {
             var affectedConversations = await _context.conversations
-                .Where(c => c.User1Id == userId || c.User2Id == userId)
+                .Where(c => c.CurrentUserId == userId || c.otherUserId == userId)
                 .ToListAsync();
 
             foreach (var conversation in affectedConversations)
             {
-                bool otherUserExists = conversation.User1Id == userId
-                    ? await _context.Users.AnyAsync(u => u.Id == conversation.User2Id)
-                    : await _context.Users.AnyAsync(u => u.Id == conversation.User1Id);
+                bool otherUserExists = conversation.CurrentUserId == userId
+                    ? await _context.Users.AnyAsync(u => u.Id == conversation.otherUserId)
+                    : await _context.Users.AnyAsync(u => u.Id == conversation.CurrentUserId);
 
                 if (!otherUserExists)
                 {

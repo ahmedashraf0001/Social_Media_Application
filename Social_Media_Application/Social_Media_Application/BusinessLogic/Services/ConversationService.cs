@@ -3,7 +3,7 @@ using Microsoft.VisualBasic;
 using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Interfaces;
 
 namespace Social_Media_Application.BusinessLogic.Services
@@ -21,13 +21,15 @@ namespace Social_Media_Application.BusinessLogic.Services
 
         public async Task<ConversationDTO> CreateConversationAsync(ConversationCreateDTO conversationDTO, string CurrentUserId)
         {
-            var otherUser = await GetOtherUserAsync(conversationDTO.User2Id);
+            var otherUser = await GetOtherUserAsync(conversationDTO.otherUserId);
 
             Conversation conversation = new Conversation()
             {
-                User1Id = conversationDTO.User1Id,
-                User2Id = conversationDTO.User2Id,
+                CurrentUserId = CurrentUserId,
+                otherUserId = conversationDTO.otherUserId,
                 CreatedAt = DateTime.UtcNow,
+                ConversationName = otherUser.FirstName + " " + otherUser.LastName,
+                PhotoURL = otherUser.PhotoUrl
             };
             await _conversationRepository.AddAsync(conversation);
             return await MapToDTOAsync(conversation, otherUser);
@@ -38,13 +40,13 @@ namespace Social_Media_Application.BusinessLogic.Services
             return Task.FromResult(new ConversationDTO()
             {
                 Id = conversation.Id,
-                User1Id = conversation.User1Id,
-                User2Id = conversation.User2Id,
+                CurrentUserId = conversation.CurrentUserId,
+                OtherUserId = conversation.otherUserId,
                 CreatedAt = conversation.CreatedAt,
                 LastMessageAt = conversation.LastMessageAt,
                 LastMessageContent = conversation.LastMessageContent,
-                PhotoUrl = otherUser?.PhotoUrl,
-                ConversationName = otherUser.FirstName + " " + otherUser.LastName,
+                PhotoUrl = conversation.PhotoURL,
+                ConversationName = conversation.ConversationName,
                 Messages = conversation.Messages.Select(e => new MessageDTO
                 {
                     Id = e.Id,
@@ -57,7 +59,6 @@ namespace Social_Media_Application.BusinessLogic.Services
                 }).ToList()
             });
         }
-        
         public async Task DeleteConversationAsync(int conversationId)
         {
             var result = await _conversationRepository.GetConversationByIdAsync(conversationId, new ConversationQueryOptions());
@@ -78,42 +79,65 @@ namespace Social_Media_Application.BusinessLogic.Services
             return otherUser;
         }
         
-        public async Task<ConversationDTO?> GetConversationAsync(int conversationId, string CurrentUserId)
+        public async Task<ConversationDTO?> GetConversationAsync(int conversationId, string CurrentUserId, ConversationQueryOptions options)
         {
-            var result = await _conversationRepository.GetConversationByIdAsync(conversationId, new ConversationQueryOptions { WithMessages = true });
+            var result = await _conversationRepository.GetConversationByIdAsync(conversationId, options);
 
             if (result == null)
             {
                 throw new InvalidOperationException("No conversations found.");
             }
-            var otherUser = await GetOtherUserAsync(result.User2Id);
+            var otherUser = await GetOtherUserAsync(result.otherUserId);
 
             return await MapToDTOAsync(result, otherUser);
         }
 
-        public async Task<List<ConversationDTO>> GetUserConversationsAsync(string CurrentUserId)
+        public async Task<List<ConversationDTO>> GetUserConversationsAsync(string CurrentUserId, ConversationQueryOptions options)
         {
-            var result = await _conversationRepository.GetUserConversationsAsync(CurrentUserId, new ConversationQueryOptions ());
+            var result = await _conversationRepository.GetUserConversationsAsync(CurrentUserId, options);
 
             if (!result.Any())
             {
                 throw new InvalidOperationException("No conversations found for the specified user.");
             }
+
             List<ConversationDTO> model = new List<ConversationDTO>();
 
             foreach (var conversation in result)
             {
-                var otherUser = await GetOtherUserAsync(conversation.User2Id);
+                var otherUser = await GetOtherUserAsync(conversation.otherUserId);
 
                 model.Add(await MapToDTOAsync(conversation, otherUser));
             }
 
             return model;
         }
-
-        public async Task<ConversationDTO?> GetConversationBetweenUsersAsync(string CurrentUserId, string user2Id)
+        public async Task<List<ConversationInboxDTO>> GetInbox(List<ConversationDTO> convo)
         {
-            var result = await _conversationRepository.GetConversationBetweenUsersAsync(CurrentUserId, user2Id, new ConversationQueryOptions { WithMessages = true});
+            var model = new List<ConversationInboxDTO>();
+
+            foreach (var conversation in convo)
+            {
+                var otherUser = await GetOtherUserAsync(conversation.OtherUserId);
+
+                model.Add(new ConversationInboxDTO
+                {
+                    Id = conversation.Id,
+                    CurrentUserId = conversation.CurrentUserId,
+                    OtherUserId = conversation.OtherUserId,
+                    CreatedAt = conversation.CreatedAt,
+                    LastMessageAt = conversation.LastMessageAt,
+                    LastMessageContent = conversation.LastMessageContent,
+                    ConversationName = conversation.ConversationName,
+                    PhotoUrl = conversation.PhotoUrl
+                });
+            }
+
+            return model;
+        }
+        public async Task<ConversationDTO?> GetConversationBetweenUsersAsync(string CurrentUserId, string user2Id, ConversationQueryOptions options)
+        {
+            var result = await _conversationRepository.GetConversationBetweenUsersAsync(CurrentUserId, user2Id, options);
 
             if (result == null)
             {
@@ -131,9 +155,29 @@ namespace Social_Media_Application.BusinessLogic.Services
                 await _conversationRepository.SaveChangesAsync();
             }
 
-            var otherUser = await GetOtherUserAsync(result.User2Id);
+            var otherUser = await GetOtherUserAsync(result.otherUserId);
 
             return await MapToDTOAsync(result, otherUser);
-        }       
+        }
+
+        public async Task<List<ConversationDTO>> SearchConversationsAsync(ConversationSearchQuery searchQuery, ConversationQueryOptions options)
+        {
+            var result = await _conversationRepository.SearchConversationsAsync(searchQuery, options);
+
+            if (!result.Any())
+            {
+                throw new InvalidOperationException("No conversations found.");
+            }
+            List<ConversationDTO> model = new List<ConversationDTO>();
+
+            foreach (var conversation in result)
+            {
+                var otherUser = await GetOtherUserAsync(conversation.otherUserId);
+
+                model.Add(await MapToDTOAsync(conversation, otherUser));
+            }
+
+            return model;
+        }
     }
 }

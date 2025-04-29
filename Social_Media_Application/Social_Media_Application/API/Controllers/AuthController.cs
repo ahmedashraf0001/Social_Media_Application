@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.BusinessLogic.Services;
@@ -28,6 +29,10 @@ namespace Social_Media_Application.API.Controllers
             {
                 return BadRequest(new { Message = ex.Message });
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
+            }
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
@@ -40,6 +45,46 @@ namespace Social_Media_Application.API.Controllers
             catch (ApplicationException ex)
             {
                 return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
+            }
+        }
+        [HttpPost("forgot-password")]
+        [Authorize]
+        public async Task<ActionResult> ForgotPassword(ForgotPasswordRequestDTO model)
+        {
+            try
+            {
+                await _authService.ForgotPasswordAsync(model);
+                return Ok("We've sent you a password reset email!");
+            }
+            catch (ApplicationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
+            }
+        }
+        [HttpPost("reset-password")]
+        [Authorize]
+        public async Task<ActionResult> ResetPassword(ResetPasswordRequestDTO model)
+        {
+            try
+            {
+                await _authService.ResetPasswordAsync(model);
+                return Ok("Password reset successfully!");
+            }
+            catch (ApplicationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
             }
         }
     }

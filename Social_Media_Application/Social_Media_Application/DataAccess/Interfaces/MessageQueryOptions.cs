@@ -4,5 +4,8 @@
     {
         public bool WithSenderInfo { get; set; } = false;
         public bool WithReceiverInfo { get; set; } = false;
+
+        public int? PageNumber { get; set; }
+        public int? PageSize { get; set; }
     }
 }

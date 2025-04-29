@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using System.Security.Claims;
 
 namespace Social_Media_Application.API.Controllers
@@ -19,9 +19,6 @@ namespace Social_Media_Application.API.Controllers
             _userService = userService;
         }
 
-        /// <summary>
-        /// Get a user's profile
-        /// </summary>
         [HttpGet("{userId}")]
         public async Task<ActionResult<UserProfileDTO>> GetUserProfile(string userId)
         {
@@ -40,9 +37,7 @@ namespace Social_Media_Application.API.Controllers
                 return NotFound(ex.Message);
             }
         }
-        /// <summary>
-        /// Update current user's profile
-        /// </summary>
+
         [HttpPut("profile")]
         [Authorize]
         public async Task<IActionResult> UpdateUserProfile([FromForm] UpdateUserProfileDTO updateUserProfileDTO)
@@ -59,9 +54,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Toggle follow state between current user and another user
-        /// </summary>
         [HttpPost("follow/{userId}")]
         [Authorize]
         public async Task<IActionResult> ToggleFollow(string userId)
@@ -82,9 +74,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Get a user's followers
-        /// </summary>
         [HttpGet("{userId}/followers")]
         public async Task<ActionResult<List<UserProfileDTO>>> GetFollowers(
             string userId,
@@ -106,9 +95,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Get users followed by a user
-        /// </summary>
         [HttpGet("{userId}/following")]
         public async Task<ActionResult<List<UserProfileDTO>>> GetFollowing(
             string userId,
@@ -130,9 +116,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Search for users
-        /// </summary>
         [HttpGet("search")]
         public async Task<ActionResult<List<UserProfileDTO>>> SearchUsers(
             [FromQuery] string query,
@@ -154,9 +137,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Delete user account (restricted to account owner)
-        /// </summary>
         [HttpDelete]
         [Authorize]
         public async Task<IActionResult> DeleteUserAccount()

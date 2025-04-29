@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Data;
 using Social_Media_Application.DataAccess.Interfaces;
 
@@ -31,7 +32,7 @@ namespace Social_Media_Application.DataAccess.Repositories
             var model = await GetLikeAsync(postId, userId);
             await DeleteAsync(model);
         }
-        public async Task<List<UserLikeDTO>> GetPostLikesWithUsersAsync(int postId, int pageNumber, int pageSize = 12)
+        public async Task<List<UserLikeDTO>> GetPostLikesWithUsersAsync(int postId, PostQueryOptions options)
         {
             var query = _set
                 .Where(pl => pl.PostId == postId)
@@ -42,10 +43,15 @@ namespace Social_Media_Application.DataAccess.Repositories
                     FullName = pl.User.FirstName + " " + pl.User.LastName,
                     PhotoUrl = pl.User.PhotoUrl
                 });
-            return await query
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
+
+            if (options.PageNumber.HasValue && options.PageSize.HasValue)
+            {
+                int skip = (options.PageNumber.Value - 1) * options.PageSize.Value;
+                query = query.Skip(skip).Take(options.PageSize.Value);
+            }
+
+            return await query.ToListAsync();
         }
+
     }
 }

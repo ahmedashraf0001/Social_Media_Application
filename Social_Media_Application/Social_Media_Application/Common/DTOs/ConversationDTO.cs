@@ -4,8 +4,8 @@
     {
         public int Id { get; set; } 
 
-        public string User1Id { get; set; }
-        public string User2Id { get; set; }
+        public string CurrentUserId { get; set; }
+        public string OtherUserId { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public string? LastMessageContent { get; set; }
@@ -17,7 +17,6 @@
     }
     public class ConversationCreateDTO
     {
-        public string User1Id { get; set; }
-        public string User2Id { get; set; }
+        public string otherUserId { get; set; }
     }
 }

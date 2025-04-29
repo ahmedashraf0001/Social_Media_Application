@@ -26,6 +26,7 @@ namespace Social_Media_Application.Common.Utils
             services.AddScoped<IMediaService, MediaService>();
             services.AddScoped<IConversationService, ConversationService>();
             services.AddScoped<IMessageService, MessageService>();
+            services.AddScoped<IEmailService, EmailService>();
 
             return services;
         }

@@ -190,7 +190,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(8500),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(9424),
                             PostId = 1,
                             Text = "Great post, John!",
                             UserId = "2"
@@ -198,7 +198,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(9032),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(9882),
                             PostId = 3,
                             Text = "Love this, Alex!",
                             UserId = "1"
@@ -206,7 +206,7 @@ namespace Social_Media_Application.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(9033),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(9884),
                             PostId = 2,
                             Text = "Amazing content, Jane!",
                             UserId = "3"
@@ -221,8 +221,16 @@ namespace Social_Media_Application.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ConversationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("CurrentUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("LastMessageAt")
                         .HasColumnType("datetime2");
@@ -230,19 +238,19 @@ namespace Social_Media_Application.Migrations
                     b.Property<string>("LastMessageContent")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("User1Id")
+                    b.Property<string>("PhotoURL")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("User2Id")
+                    b.Property<string>("otherUserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("User1Id");
+                    b.HasIndex("CurrentUserId");
 
-                    b.HasIndex("User2Id");
+                    b.HasIndex("otherUserId");
 
                     b.ToTable("conversations");
                 });
@@ -331,7 +339,7 @@ namespace Social_Media_Application.Migrations
                             Id = 1,
                             CommentsCount = 0,
                             Content = "This is John's first post!",
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(7425),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(8435),
                             LikesCount = 0,
                             MediaUrl = "/images/post1.jpg",
                             UserId = "1"
@@ -341,7 +349,7 @@ namespace Social_Media_Application.Migrations
                             Id = 2,
                             CommentsCount = 0,
                             Content = "Jane's first post!",
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(7996),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(9021),
                             LikesCount = 0,
                             MediaUrl = "/images/post2.jpg",
                             UserId = "2"
@@ -351,7 +359,7 @@ namespace Social_Media_Application.Migrations
                             Id = 3,
                             CommentsCount = 0,
                             Content = "Hello, I'm Alex! Here's my first post.",
-                            CreatedAt = new DateTime(2025, 4, 27, 1, 56, 53, 497, DateTimeKind.Utc).AddTicks(7998),
+                            CreatedAt = new DateTime(2025, 4, 28, 20, 54, 22, 150, DateTimeKind.Utc).AddTicks(9022),
                             LikesCount = 0,
                             MediaUrl = "/images/post3.jpg",
                             UserId = "3"
@@ -481,7 +489,7 @@ namespace Social_Media_Application.Migrations
                             Id = "1",
                             AccessFailedCount = 0,
                             Bio = "Hello, I am John!",
-                            ConcurrencyStamp = "e8f02336-09dd-43bd-9e10-a7747be66fbc",
+                            ConcurrencyStamp = "408be698-e605-4b3d-89c3-7d9d969a0dce",
                             Email = "john@example.com",
                             EmailConfirmed = false,
                             FirstName = "john",
@@ -491,7 +499,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/john.jpg",
-                            SecurityStamp = "f7bd8ac2-1d34-4267-ad35-2413d816d967",
+                            SecurityStamp = "3d7c17d3-2201-4e3b-8e8d-23cbfff9ef47",
                             TwoFactorEnabled = false,
                             UserName = "john_doe"
                         },
@@ -500,7 +508,7 @@ namespace Social_Media_Application.Migrations
                             Id = "2",
                             AccessFailedCount = 0,
                             Bio = "Hey, I am Jane!",
-                            ConcurrencyStamp = "7e5e55ff-f8d2-4b58-93ad-d2e697050c30",
+                            ConcurrencyStamp = "8f118f6c-67b0-4978-95d6-7ef0a5ea0559",
                             Email = "jane@example.com",
                             EmailConfirmed = false,
                             FirstName = "jane",
@@ -510,7 +518,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/jane.jpg",
-                            SecurityStamp = "4b061b5e-4eda-4ffa-a7c7-8e7c2301fc17",
+                            SecurityStamp = "2bb609ea-264f-46e7-b732-f45ba350676f",
                             TwoFactorEnabled = false,
                             UserName = "jane_smith"
                         },
@@ -519,7 +527,7 @@ namespace Social_Media_Application.Migrations
                             Id = "3",
                             AccessFailedCount = 0,
                             Bio = "Alex here, love to share posts!",
-                            ConcurrencyStamp = "ea103be5-f456-447d-8a78-45cfe515aa75",
+                            ConcurrencyStamp = "e90194e0-b5be-4cda-83e7-38891a04bec3",
                             Email = "alex@example.com",
                             EmailConfirmed = false,
                             FirstName = "alex",
@@ -529,7 +537,7 @@ namespace Social_Media_Application.Migrations
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
                             PhotoUrl = "/images/alex.jpg",
-                            SecurityStamp = "dbf744e8-3204-443c-bf0a-63abe0bc3ba1",
+                            SecurityStamp = "a5f68633-1f52-4896-9de1-91d103c409a7",
                             TwoFactorEnabled = false,
                             UserName = "alex_king"
                         });
@@ -639,21 +647,21 @@ namespace Social_Media_Application.Migrations
 
             modelBuilder.Entity("Social_Media_Application.Common.Entities.Conversation", b =>
                 {
-                    b.HasOne("Social_Media_Application.Common.Entities.User", "User1")
+                    b.HasOne("Social_Media_Application.Common.Entities.User", "CurrentUser")
                         .WithMany("ConversationsInitiated")
-                        .HasForeignKey("User1Id")
+                        .HasForeignKey("CurrentUserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Social_Media_Application.Common.Entities.User", "User2")
+                    b.HasOne("Social_Media_Application.Common.Entities.User", "OtherUser")
                         .WithMany("ConversationsReceived")
-                        .HasForeignKey("User2Id")
+                        .HasForeignKey("otherUserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("User1");
+                    b.Navigation("CurrentUser");
 
-                    b.Navigation("User2");
+                    b.Navigation("OtherUser");
                 });
 
             modelBuilder.Entity("Social_Media_Application.Common.Entities.Message", b =>
