@@ -1,5 +1,5 @@
 ﻿using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 
 namespace Social_Media_Application.DataAccess.Interfaces
 {

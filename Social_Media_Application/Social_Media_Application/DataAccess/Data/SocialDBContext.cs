@@ -82,15 +82,15 @@ namespace Social_Media_Application.DataAccess.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Conversation>()
-                .HasOne(c => c.User1)
+                .HasOne(c => c.CurrentUser)
                 .WithMany(u => u.ConversationsInitiated)
-                .HasForeignKey(c => c.User1Id)
+                .HasForeignKey(c => c.CurrentUserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Conversation>()
-                .HasOne(c => c.User2)
+                .HasOne(c => c.OtherUser)
                 .WithMany(u => u.ConversationsReceived)
-                .HasForeignKey(c => c.User2Id)
+                .HasForeignKey(c => c.otherUserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Message>()

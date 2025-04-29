@@ -2,7 +2,7 @@
 using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Interfaces;
 using Social_Media_Application.DataAccess.Repositories;
 
@@ -88,14 +88,17 @@ namespace Social_Media_Application.BusinessLogic.Services
         public async Task<MessageDTO> SendMessageAsync(MessageCreateDTO messageDTO, string senderId)
         {
             var result = await _conversationRepository.GetConversationByIdAsync(messageDTO.ConversationId, new ConversationQueryOptions());
+            if (result == null)
+            {
+                throw new InvalidOperationException(message: "Conversation not found."); 
+            }
             Message message = new Message()
             {
                 ConversationId = messageDTO.ConversationId,
                 Content = messageDTO.Content,
-                SenderId= senderId,               
-                ReceiverId= result.User2Id,
+                SenderId = senderId,
+                ReceiverId = result.otherUserId,
             };
-
             result.LastMessageAt = DateTime.UtcNow;
             result.LastMessageContent = messageDTO.Content;
 
@@ -103,6 +106,26 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             await _messageRepository.SendMessageAsync(message);
             return await MapToDTOAsync(message);
+        }
+
+
+        public async Task<List<MessageDTO>> SearchMessagesAsync(MessageQueryOptions options, MessageSearchQuery searchQuery)
+        {
+            var result = await _messageRepository.SearchMessagesAsync(searchQuery, options);
+
+            if (result == null)
+            {
+                throw new InvalidOperationException("No Messages found");
+            }
+
+            List<MessageDTO> model = new List<MessageDTO>();
+
+            foreach (var message in result)
+            {
+                model.Add(await MapToDTOAsync(message));
+            }
+
+            return model;
         }
     }
 }

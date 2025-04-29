@@ -21,7 +21,7 @@ namespace Social_Media_Application.API
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<SocialDBContext>();
+            builder.Services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<SocialDBContext>().AddDefaultTokenProviders();
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

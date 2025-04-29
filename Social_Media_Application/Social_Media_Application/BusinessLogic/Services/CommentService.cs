@@ -3,6 +3,7 @@ using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
 using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Interfaces;
 
 namespace Social_Media_Application.BusinessLogic.Services

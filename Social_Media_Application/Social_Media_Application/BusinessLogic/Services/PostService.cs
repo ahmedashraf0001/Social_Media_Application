@@ -1,7 +1,8 @@
-﻿using Social_Media_Application.BusinessLogic.Interfaces;
+﻿using Microsoft.Extensions.Options;
+using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using Social_Media_Application.DataAccess.Interfaces;
 using System;
 
@@ -21,7 +22,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             _mediaService = mediaService;
             _postLikeRepository = postLikeRepository;
         }
-        public async Task<PostDTO> CreatePostAsync(PostCreateDTO postDTO)
+        public async Task<PostDTO> CreatePostAsync(string currentUserId, PostCreateDTO postDTO)
         {
             string url = "N/A";
             MediaType type = MediaType.None;
@@ -35,7 +36,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             {
                 Content = postDTO.Content,
                 CreatedAt = DateTime.UtcNow,
-                UserId = postDTO.UserId,
+                UserId = currentUserId,
                 MediaUrl = url,
                 MediaType = type
             };
@@ -64,9 +65,9 @@ namespace Social_Media_Application.BusinessLogic.Services
             }
             await _postRepository.DeleteAsync(model);
         }
-        public async Task<List<PostDTO>> GenerateFeedAsync(string currentUserId,string userId, int pageNumber, int pageSize = 12)
+        public async Task<List<PostDTO>> GenerateFeedAsync(string currentUserId, PostQueryOptions options)
         {
-            var model = await _postRepository.GenerateFeedAsync(currentUserId, userId, pageNumber, pageSize);
+            var model = await _postRepository.GenerateFeedAsync(currentUserId, options);
             if (model.Count > 0) 
             {
                 return model;
@@ -130,7 +131,10 @@ namespace Social_Media_Application.BusinessLogic.Services
             if (model == null)
                 throw new InvalidOperationException("Post not found");
 
-            model.Content = postDTO.Content;
+            if (postDTO.Content != null)
+            {
+                model.Content = postDTO.Content;
+            }
 
             if (postDTO.Media != null)
             {
@@ -169,19 +173,46 @@ namespace Social_Media_Application.BusinessLogic.Services
             }
             
         }
-        public async Task<List<UserLikeDTO>> GetPostLikesAsync(int postId, int pageNumber, int pageSize = 12)
+        public async Task<List<UserLikeDTO>> GetPostLikesAsync(int postId, PostQueryOptions options)
         {
             var post = await _postRepository.GetByIdAsync(postId);
             if (post == null)
                 throw new InvalidOperationException("Post not found");
 
-            var likes = await _postLikeRepository.GetPostLikesWithUsersAsync(postId, pageNumber, pageSize);
+            var likes = await _postLikeRepository.GetPostLikesWithUsersAsync(postId, options);
 
             if (likes.Count == 0)
                 return new List<UserLikeDTO>();
 
             return likes;
         }
-
+        public async Task<List<PostDTO>> SearchPostsAsync(string currentUserId, PostSearchQuery searchQuery, PostQueryOptions options)
+        {
+            options.IncludeAuthorDetails = true;
+            var model = await _postRepository.SearchPostsAsync(searchQuery, options);
+            List<PostDTO> posts = new List<PostDTO>();
+            if (model.Count != 0)
+            {
+                foreach (var post in model)
+                {
+                    PostDTO postDTO = new PostDTO()
+                    {
+                        Id = post.Id,
+                        Content = post.Content,
+                        MediaUrl = post.MediaUrl,
+                        MediaType = post.MediaType,
+                        CreatedAt = post.CreatedAt,
+                        UserId = post.UserId,
+                        AuthorUsername = post.User.FirstName + " " + post.User.LastName,
+                        LikeCount = post.LikesCount,
+                        CommentCount = post.CommentsCount,
+                        IsLikedByCurrentUser = (post.UserId == currentUserId) ? true : false,
+                    };
+                    posts.Add(postDTO);
+                }
+                return posts;
+            }
+            throw new InvalidOperationException(message: "Posts Not Found");
+        }
     }
 }

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Social_Media_Application.API.Controllers.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Social_Media_Application.Common.DTOs.ForgotPasswordRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -26,6 +42,22 @@
       {
         "Name": "registerDto",
         "Type": "Social_Media_Application.Common.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Social_Media_Application.Common.DTOs.ResetPasswordRequestDTO",
         "IsRequired": true
       }
     ],
@@ -102,8 +134,85 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "GetAllConversations",
+    "RelativePath": "api/Messaging/conversations/All/{userId}/{pageNumber}/{pageSize}/{withMessages}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "withMessages",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.ConversationDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "GetConversationBetweenUsers",
+    "RelativePath": "api/Messaging/conversations/Between/{otherUserId}/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "otherUserId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.ConversationDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "CreateConversation",
-    "RelativePath": "api/Messaging/conversations",
+    "RelativePath": "api/Messaging/conversations/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -128,34 +237,8 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "GetConversationById",
-    "RelativePath": "api/Messaging/conversations/{conversationId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "conversationId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Social_Media_Application.Common.DTOs.ConversationDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "DeleteConversation",
-    "RelativePath": "api/Messaging/conversations/{conversationId}",
+    "RelativePath": "api/Messaging/conversations/Delete/{conversationId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -170,15 +253,30 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "GetMessagesBetweenUsers",
-    "RelativePath": "api/Messaging/conversations/between/{user2Id}",
+    "Method": "GetConversationById",
+    "RelativePath": "api/Messaging/conversations/Id/{conversationId}/{pageNumber}/{pageSize}/{withMessages}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user2Id",
-        "Type": "System.String",
+        "Name": "conversationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "withMessages",
+        "Type": "System.Boolean",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -196,93 +294,87 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "GenerateCurrentUserConversations",
-    "RelativePath": "api/Messaging/conversations/current",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.ConversationDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "GetAllConversations",
-    "RelativePath": "api/Messaging/conversations/user/{userId}",
+    "Method": "GenerateCurrentUserInbox",
+    "RelativePath": "api/Messaging/conversations/inbox/{pageNumber}/{pageSize}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.String",
+        "Name": "pageNumber",
+        "Type": "System.Int32",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
+      },
       {
-        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.ConversationDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "SendMessageAsync",
-    "RelativePath": "api/Messaging/messages",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "messageDTO",
-        "Type": "Social_Media_Application.Common.DTOs.MessageCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Social_Media_Application.Common.DTOs.MessageDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "GetMessageByIdAsync",
-    "RelativePath": "api/Messaging/messages/{messageId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "messageId",
+        "Name": "pageSize",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Social_Media_Application.Common.DTOs.MessageDTO",
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.ConversationInboxDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "SearchForConverstation",
+    "RelativePath": "api/Messaging/conversations/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CurrentUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OtherUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "withMessages",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.ConversationDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -295,7 +387,7 @@
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "DeleteMessageAsync",
-    "RelativePath": "api/Messaging/messages/{messageId}",
+    "RelativePath": "api/Messaging/messages/Delete/{messageId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -311,7 +403,7 @@
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "EditMessageAsync",
-    "RelativePath": "api/Messaging/messages/{messageId}/{content}",
+    "RelativePath": "api/Messaging/messages/Edit/{messageId}/{content}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -341,8 +433,121 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "GetMessageByIdAsync",
+    "RelativePath": "api/Messaging/messages/Id/{messageId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.MessageDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "SearchForMessages",
+    "RelativePath": "api/Messaging/messages/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ConversationId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SenderId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RecipientId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.MessageDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "SendMessageAsync",
+    "RelativePath": "api/Messaging/messages/Send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageDTO",
+        "Type": "Social_Media_Application.Common.DTOs.MessageCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.MessageDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "GetUnreadMessagesForUserAsync",
-    "RelativePath": "api/Messaging/messages/unread/{userId}",
+    "RelativePath": "api/Messaging/messages/Unread/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -367,133 +572,8 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "Create",
-    "RelativePath": "api/Post",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "UserId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Content",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Media",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Social_Media_Application.Common.Entities.Post",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "UpdatePostAsync",
-    "RelativePath": "api/Post",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Content",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Media",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "Delete",
-    "RelativePath": "api/Post/{postId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "postId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "GetById",
-    "RelativePath": "api/Post/{postId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "postId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "ToggleLike",
-    "RelativePath": "api/Post/{postId}/{userId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "postId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "GetPostLikes",
-    "RelativePath": "api/Post/{postId}/likes/{pageNumber}/{pageSize}",
+    "Method": "GetUsersWhoLikedPostAsync",
+    "RelativePath": "api/Post/{postId}/Likes/{pageNumber}/{pageSize}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -528,15 +608,67 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "GetByUserId",
-    "RelativePath": "api/Post/{userId}",
+    "Method": "Create",
+    "RelativePath": "api/Post/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Media",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.Entities.Post",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "Delete",
+    "RelativePath": "api/Post/Delete/{postId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "Feed",
+    "RelativePath": "api/Post/Feed/{pageNumber}/{pageSize}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.String",
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -554,8 +686,132 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.PostController",
-    "Method": "Feed",
-    "RelativePath": "api/Post/{userId}/{pageNumber}/{pageSize}",
+    "Method": "GetById",
+    "RelativePath": "api/Post/Id/{postId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.PostDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "ToggleLike",
+    "RelativePath": "api/Post/Like/{postId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "SearchPostsAsync",
+    "RelativePath": "api/Post/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MediaType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.PostDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "UpdatePostAsync",
+    "RelativePath": "api/Post/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Media",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.PostController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/Post/User/{userId}/{pageNumber}/{pageSize}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Social_Media_Application.Common.DTOs;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 
 namespace Social_Media_Application.BusinessLogic.Interfaces
 {

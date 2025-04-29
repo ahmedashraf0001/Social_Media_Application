@@ -4,7 +4,7 @@ using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.BusinessLogic.Services;
 using Social_Media_Application.Common.DTOs;
 using Social_Media_Application.Common.Entities;
-using Social_Media_Application.Common.Utils;
+using Social_Media_Application.Common.Utils.Queries;
 using System.Security.Claims;
 
 namespace Social_Media_Application.API.Controllers
@@ -20,16 +20,14 @@ namespace Social_Media_Application.API.Controllers
             _postService = postService;
         }
 
-        /// <summary>
-        /// Creates a new post.
-        /// </summary>
-        [HttpPost]
+        [HttpPost("Create/")]
         [Authorize]
         public async Task<ActionResult<Post>> Create([FromForm] PostCreateDTO post)
         {
             try
             {
-                var model = await _postService.CreatePostAsync(post);
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var model = await _postService.CreatePostAsync(currentUserId, post);
                 return Ok(model);
             }
             catch (Exception ex)
@@ -38,10 +36,7 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Deletes a post.
-        /// </summary>
-        [HttpDelete("{postId:int}")]
+        [HttpDelete("Delete/{postId:int}")]
         [Authorize]
         public async Task<ActionResult> Delete(int postId)
         {
@@ -60,17 +55,14 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Fetches the feed of posts for a user.
-        /// </summary>
-        [HttpGet("{userId}/{pageNumber:int}/{pageSize:int}")]
+        [HttpGet("Feed/{pageNumber:int}/{pageSize:int}")]
         [Authorize]
-        public async Task<ActionResult<List<PostDTO>>> Feed(string userId, int pageNumber, int pageSize = 12)
+        public async Task<ActionResult<List<PostDTO>>> Feed(int pageNumber = 1, int pageSize = 12)
         {
             try
             {
                 var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var model = await _postService.GenerateFeedAsync(currentUserId, userId, pageNumber, pageSize);
+                var model = await _postService.GenerateFeedAsync(currentUserId, new PostQueryOptions() { PageNumber = pageNumber, PageSize = pageSize });
                 return Ok(model);
             }
             catch (InvalidOperationException ex)
@@ -83,10 +75,7 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Fetches a post by its ID.
-        /// </summary>
-        [HttpGet("{postId:int}")]
+        [HttpGet("Id/{postId:int}")]
         [Authorize]
         public async Task<ActionResult<PostDTO>> GetById(int postId)
         {
@@ -106,17 +95,14 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Fetches posts by a specific user.
-        /// </summary>
-        [HttpGet("{userId}")]
+        [HttpGet("User/{userId}/{pageNumber:int}/{pageSize:int}")]
         [Authorize]
-        public async Task<ActionResult<List<PostDTO>>> GetByUserId(string userId)
+        public async Task<ActionResult<List<PostDTO>>> GetByUserId(string userId, int pageNumber = 1, int pageSize = 12)
         {
             try
             {
                 var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var model = await _postService.GetPostsByUserIdAsync(currentUserId, userId, new PostQueryOptions());
+                var model = await _postService.GetPostsByUserIdAsync(currentUserId, userId, new PostQueryOptions() { PageNumber = pageNumber, PageSize = pageSize });
                 return Ok(model);
             }
             catch (InvalidOperationException ex)
@@ -129,10 +115,7 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Updates an existing post.
-        /// </summary>
-        [HttpPut]
+        [HttpPut("Update/")]
         [Authorize]
         public async Task<ActionResult> UpdatePostAsync([FromForm] PostUpdateDTO postDTO)
         {
@@ -151,16 +134,15 @@ namespace Social_Media_Application.API.Controllers
             }
         }
 
-        /// <summary>
-        /// Toggles like for a post.
-        /// </summary>
-        [HttpPut("{postId:int}/{userId}")]
+        [HttpPut("Like/{postId:int}")]
         [Authorize]
-        public async Task<ActionResult> ToggleLike(int postId, string userId)
+        public async Task<ActionResult> ToggleLike(int postId)
         {
             try
             {
-                bool isLiked = await _postService.ToggleLikeAsync(postId, userId);
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                bool isLiked = await _postService.ToggleLikeAsync(postId, currentUserId);
 
                 string message = isLiked ? "Post liked successfully!" : "Post unliked successfully!";
                 return Ok(new { Message = message, IsLiked = isLiked });
@@ -174,14 +156,36 @@ namespace Social_Media_Application.API.Controllers
                 return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
             }
         }
-
-        [HttpGet("{postId:int}/likes/{pageNumber:int}/{pageSize:int}")]
-        [Authorize]
-        public async Task<ActionResult<List<UserLikeDTO>>> GetPostLikes(int postId, int pageNumber, int pageSize = 12)
+        [HttpGet("Search/")]
+        public async Task<ActionResult<List<PostDTO>>> SearchPostsAsync(
+            [FromQuery] PostSearchQuery searchQuery, 
+            [FromQuery] int pageNumber = 1,         
+            [FromQuery] int pageSize = 12           
+        )
         {
             try
             {
-                var model = await _postService.GetPostLikesAsync(postId, pageNumber, pageSize);
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var model = await _postService.SearchPostsAsync(currentUserId, searchQuery ,new PostQueryOptions());
+                return Ok(model);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
+            }
+        }
+
+        [HttpGet("{postId:int}/Likes/{pageNumber:int}/{pageSize:int}")]
+        [Authorize]
+        public async Task<ActionResult<List<UserLikeDTO>>> GetUsersWhoLikedPostAsync(int postId, int pageNumber = 1, int pageSize = 12)
+        {
+            try
+            {
+                var model = await _postService.GetPostLikesAsync(postId, new PostQueryOptions() { PageNumber = pageNumber, PageSize = pageSize });
                 return Ok(model);
             }
             catch (InvalidOperationException ex)
