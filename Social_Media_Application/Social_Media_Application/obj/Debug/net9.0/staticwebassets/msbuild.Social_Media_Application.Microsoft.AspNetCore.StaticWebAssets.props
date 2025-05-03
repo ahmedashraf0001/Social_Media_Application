@@ -72,23 +72,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e17b4053-9126-4f13-be89-cc3decf5478e.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\default.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Social_Media_Application</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Social_Media_Application</BasePath>
-      <RelativePath>uploads/e17b4053-9126-4f13-be89-cc3decf5478e.png</RelativePath>
+      <RelativePath>uploads/default.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uj31jr6pbt</Fingerprint>
-      <Integrity>xlhb4ezDFtbZhHC84zSz/73wMQJKnnRclYKpzBT9aFg=</Integrity>
+      <Fingerprint>5bc1hng2h3</Fingerprint>
+      <Integrity>bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e17b4053-9126-4f13-be89-cc3decf5478e.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\default.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\f8ecb302-847d-48bb-8582-6d545b762bf4.png'))">
       <SourceType>Package</SourceType>
