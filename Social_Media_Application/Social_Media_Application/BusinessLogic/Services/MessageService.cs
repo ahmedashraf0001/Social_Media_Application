@@ -12,10 +12,12 @@ namespace Social_Media_Application.BusinessLogic.Services
     {
         private readonly IMessageRepository _messageRepository;
         private readonly IConversationRepository _conversationRepository;
-        public MessageService(IMessageRepository messageRepository, IConversationRepository conversationRepository)
+        private readonly IConversationService _conversationService;
+        public MessageService(IMessageRepository messageRepository, IConversationRepository conversationRepository, IConversationService conversationService)
         {
             _messageRepository = messageRepository;
             _conversationRepository = conversationRepository;
+            _conversationService = conversationService;
         }
         public async Task DeleteMessageAsync(int messageId)
         {
@@ -51,7 +53,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             var messageDTOs = new MessageDTO()
             {
                 Id = message.Id,
-                ConversationId = message.Id, 
+                ConversationId = message.ConversationId, 
                 SenderId = message.SenderId,
                 ReceiverId = message.ReceiverId,
                 Content = message.Content,
@@ -84,30 +86,40 @@ namespace Social_Media_Application.BusinessLogic.Services
         {
             await _messageRepository.MarkMessageAsReadAsync(messageId); 
         }
-
         public async Task<MessageDTO> SendMessageAsync(MessageCreateDTO messageDTO, string senderId)
         {
-            var result = await _conversationRepository.GetConversationByIdAsync(messageDTO.ConversationId, new ConversationQueryOptions());
+            var result = await _conversationRepository.GetConversationBetweenUsersAsync(
+                senderId, messageDTO.ReceiverId, new ConversationQueryOptions());
+
+
             if (result == null)
             {
-                throw new InvalidOperationException(message: "Conversation not found."); 
+                result = await _conversationService.CreateConversationAsync(
+                    new ConversationCreateDTO { 
+                        CurrentUserId = senderId,
+                        OtherUserId = messageDTO.ReceiverId,
+                        LastMessageContent = messageDTO.Content,
+                        LastMessageAt = DateTime.UtcNow
+                    });
             }
-            Message message = new Message()
+
+            var message = new Message()
             {
-                ConversationId = messageDTO.ConversationId,
+                ConversationId = result.Id,
                 Content = messageDTO.Content,
                 SenderId = senderId,
-                ReceiverId = result.otherUserId,
+                ReceiverId = result != null ? result.otherUserId : messageDTO.ReceiverId,
+                SentAt = DateTime.UtcNow
             };
             result.LastMessageAt = DateTime.UtcNow;
-            result.LastMessageContent = messageDTO.Content;
+            result.LastMessageContent = message.Content;
+
+            await _messageRepository.SendMessageAsync(message);
 
             await _messageRepository.SaveChangesAsync();
 
-            await _messageRepository.SendMessageAsync(message);
             return await MapToDTOAsync(message);
         }
-
 
         public async Task<List<MessageDTO>> SearchMessagesAsync(MessageQueryOptions options, MessageSearchQuery searchQuery)
         {

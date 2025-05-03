@@ -512,54 +512,6 @@
         }
       }
     },
-    "/api/Messaging/conversations/Create": {
-      "post": {
-        "tags": [
-          "Messaging"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationCreateDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationCreateDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationCreateDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationDTO"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationDTO"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ConversationDTO"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Messaging/conversations/Delete/{conversationId}": {
       "delete": {
         "tags": [
@@ -1842,14 +1794,6 @@
             "type": "string",
             "nullable": true
           },
-          "conversationName": {
-            "type": "string",
-            "nullable": true
-          },
-          "photoURL": {
-            "type": "string",
-            "nullable": true
-          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -1874,16 +1818,6 @@
             "items": {
               "$ref": "#/components/schemas/Message"
             },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ConversationCreateDTO": {
-        "type": "object",
-        "properties": {
-          "otherUserId": {
-            "type": "string",
             "nullable": true
           }
         },
@@ -2071,9 +2005,9 @@
       "MessageCreateDTO": {
         "type": "object",
         "properties": {
-          "conversationId": {
-            "type": "integer",
-            "format": "int32"
+          "receiverId": {
+            "type": "string",
+            "nullable": true
           },
           "content": {
             "type": "string",

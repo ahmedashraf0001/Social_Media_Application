@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8f+weIsIltVBXRIoLXXNVYseqPW3pgSREtXxVWp6RW8=",
+  "Hash": "1ombzULPoJy2sBPex3ko/L6+DwgO3Lf0H+VOnyKZ4Hg=",
   "Source": "Social_Media_Application",
   "BasePath": "_content/Social_Media_Application",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Social_Media_Application\\wwwroot",
       "Source": "Social_Media_Application",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/55e0ec72-7982-4f95-adc5-5c9199b38121#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png"
     },
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg"
     },
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png"
     },
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png"
     },
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/e17b4053-9126-4f13-be89-cc3decf5478e#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png"
     },
     {
-      "Identity": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Identity": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "SourceId": "Social_Media_Application",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
+      "ContentRoot": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\",
       "BasePath": "_content/Social_Media_Application",
       "RelativePath": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -146,7 +146,7 @@
   "Endpoints": [
     {
       "Route": "uploads/55e0ec72-7982-4f95-adc5-5c9199b38121.kmycvw9u9e.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -191,7 +191,7 @@
     },
     {
       "Route": "uploads/55e0ec72-7982-4f95-adc5-5c9199b38121.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -228,7 +228,7 @@
     },
     {
       "Route": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -265,7 +265,7 @@
     },
     {
       "Route": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503.wxchjjpofe.jpg",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -310,7 +310,7 @@
     },
     {
       "Route": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20.kmycvw9u9e.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -355,7 +355,7 @@
     },
     {
       "Route": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -392,7 +392,7 @@
     },
     {
       "Route": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.kmycvw9u9e.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -437,7 +437,7 @@
     },
     {
       "Route": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -474,7 +474,7 @@
     },
     {
       "Route": "uploads/e17b4053-9126-4f13-be89-cc3decf5478e.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -511,7 +511,7 @@
     },
     {
       "Route": "uploads/e17b4053-9126-4f13-be89-cc3decf5478e.uj31jr6pbt.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -556,7 +556,7 @@
     },
     {
       "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.1mdjwq8k67.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -601,7 +601,7 @@
     },
     {
       "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png",
-      "AssetFile": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

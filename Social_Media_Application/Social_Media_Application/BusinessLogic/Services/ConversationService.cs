@@ -19,20 +19,21 @@ namespace Social_Media_Application.BusinessLogic.Services
             _userManager = userManager;
         }
 
-        public async Task<ConversationDTO> CreateConversationAsync(ConversationCreateDTO conversationDTO, string CurrentUserId)
+        public async Task<Conversation> CreateConversationAsync(ConversationCreateDTO conversationDTO)
         {
-            var otherUser = await GetOtherUserAsync(conversationDTO.otherUserId);
+            var otherUser = await GetOtherUserAsync(conversationDTO.OtherUserId);
 
             Conversation conversation = new Conversation()
             {
-                CurrentUserId = CurrentUserId,
-                otherUserId = conversationDTO.otherUserId,
+                CurrentUserId = conversationDTO.CurrentUserId,
+                otherUserId = conversationDTO.OtherUserId,
                 CreatedAt = DateTime.UtcNow,
-                ConversationName = otherUser.FirstName + " " + otherUser.LastName,
-                PhotoURL = otherUser.PhotoUrl
+                LastMessageAt = DateTime.UtcNow,
+                LastMessageContent = conversationDTO.LastMessageContent
             };
             await _conversationRepository.AddAsync(conversation);
-            return await MapToDTOAsync(conversation, otherUser);
+
+            return conversation;
         }
         
         public Task<ConversationDTO> MapToDTOAsync(Conversation conversation, User otherUser)
@@ -45,8 +46,8 @@ namespace Social_Media_Application.BusinessLogic.Services
                 CreatedAt = conversation.CreatedAt,
                 LastMessageAt = conversation.LastMessageAt,
                 LastMessageContent = conversation.LastMessageContent,
-                PhotoUrl = conversation.PhotoURL,
-                ConversationName = conversation.ConversationName,
+                PhotoUrl = otherUser.PhotoUrl,
+                ConversationName = otherUser.FirstName + " " + otherUser.LastName,
                 Messages = conversation.Messages.Select(e => new MessageDTO
                 {
                     Id = e.Id,
@@ -87,7 +88,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             {
                 throw new InvalidOperationException("No conversations found.");
             }
-            var otherUser = await GetOtherUserAsync(result.otherUserId);
+            var otherUser = await GetOtherUserAsync(result.CurrentUserId == CurrentUserId ? result.otherUserId : result.CurrentUserId);
 
             return await MapToDTOAsync(result, otherUser);
         }
@@ -105,7 +106,7 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             foreach (var conversation in result)
             {
-                var otherUser = await GetOtherUserAsync(conversation.otherUserId);
+                var otherUser = await GetOtherUserAsync(conversation.CurrentUserId == CurrentUserId ? conversation.otherUserId: conversation.CurrentUserId);
 
                 model.Add(await MapToDTOAsync(conversation, otherUser));
             }
@@ -155,7 +156,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                 await _conversationRepository.SaveChangesAsync();
             }
 
-            var otherUser = await GetOtherUserAsync(result.otherUserId);
+            var otherUser = await GetOtherUserAsync(result.CurrentUserId == CurrentUserId ? result.otherUserId : result.CurrentUserId);
 
             return await MapToDTOAsync(result, otherUser);
         }
@@ -172,7 +173,7 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             foreach (var conversation in result)
             {
-                var otherUser = await GetOtherUserAsync(conversation.otherUserId);
+                var otherUser = await GetOtherUserAsync(conversation.CurrentUserId == searchQuery.CurrentUserId ? conversation.otherUserId : conversation.CurrentUserId);
 
                 model.Add(await MapToDTOAsync(conversation, otherUser));
             }

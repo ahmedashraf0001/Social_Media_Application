@@ -211,32 +211,6 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
-    "Method": "CreateConversation",
-    "RelativePath": "api/Messaging/conversations/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "conversationDTO",
-        "Type": "Social_Media_Application.Common.DTOs.ConversationCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Social_Media_Application.Common.DTOs.ConversationDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "DeleteConversation",
     "RelativePath": "api/Messaging/conversations/Delete/{conversationId}",
     "HttpMethod": "DELETE",

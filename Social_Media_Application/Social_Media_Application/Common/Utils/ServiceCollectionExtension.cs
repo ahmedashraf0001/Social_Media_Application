@@ -1,8 +1,10 @@
-﻿using Social_Media_Application.BusinessLogic.Interfaces;
+﻿using Microsoft.AspNetCore.SignalR;
+using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.BusinessLogic.Services;
 using Social_Media_Application.Common.Entities;
 using Social_Media_Application.DataAccess.Interfaces;
 using Social_Media_Application.DataAccess.Repositories;
+using Social_Media_Application.Hubs;
 
 namespace Social_Media_Application.Common.Utils
 {
@@ -27,6 +29,9 @@ namespace Social_Media_Application.Common.Utils
             services.AddScoped<IConversationService, ConversationService>();
             services.AddScoped<IMessageService, MessageService>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddSingleton<IUserIdProvider, UserIdProvider>();
+
+            services.AddSingleton<ConnectionMapping>();
 
             return services;
         }
