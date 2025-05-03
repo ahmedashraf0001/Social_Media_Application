@@ -30,12 +30,12 @@ namespace Social_Media_Application.BusinessLogic.Services
             var userRoles = await _userManager.GetRolesAsync(user);
             var authClaims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim("FirstName", user.FirstName),
+                new Claim(ClaimTypes.Name, user.UserName ?? string.Empty),
+                new Claim(ClaimTypes.NameIdentifier, user.Id ?? string.Empty),
+                new Claim(ClaimTypes.Email, user.Email ?? string.Empty),
+                new Claim("FirstName", user.FirstName ?? string.Empty),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("Image",user.PhotoUrl)
+                new Claim("Image",user.PhotoUrl ?? "/uploads/default.png")
             };
             foreach (var userRole in userRoles)
             {
