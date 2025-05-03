@@ -126,32 +126,6 @@ namespace Social_Media_Application.API.Controllers
                 return StatusCode(500, new { Message = "Internal Server Error." });
             }
         }
-        
-        [HttpPost("conversations/Create")]
-        public async Task<ActionResult<ConversationDTO?>> CreateConversation([FromBody] ConversationCreateDTO conversationDTO)
-        {
-            try
-            {
-                var Current = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-                var conversations = await _conversationService.CreateConversationAsync(conversationDTO, Current);
-
-                if (conversations == null)
-                {
-                    return NoContent();
-                }
-
-                return Ok(conversations);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return NotFound(new { Message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { Message = "Internal Server Error." });
-            }
-        }
 
         [HttpDelete("conversations/Delete/{conversationId:int}")]
         public async Task<ActionResult> DeleteConversation(int conversationId)
@@ -174,7 +148,6 @@ namespace Social_Media_Application.API.Controllers
 
         [HttpGet("conversations/Search")]
         public async Task<ActionResult<List<ConversationDTO>>> SearchForConverstation(
-      
             [FromQuery] ConversationSearchQuery searchQuery,
             [FromQuery] int pageNumber = 1,
             [FromQuery] int pageSize = 12,
@@ -303,8 +276,7 @@ namespace Social_Media_Application.API.Controllers
             {
                 return StatusCode(500, new { Message = "Internal Server Error." });
             }
-        }
-        
+        }       
         [HttpDelete("messages/Delete/{messageId}")]
         public async Task<ActionResult> DeleteMessageAsync(int messageId)
         {

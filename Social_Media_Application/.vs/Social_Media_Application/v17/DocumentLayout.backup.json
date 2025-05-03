@@ -1,38 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\",
+  "WorkspaceRootPath": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\interfaces\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\common\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\common\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\messagingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\controllers\\messagingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\dataaccess\\repositories\\conversationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\dataaccess\\repositories\\conversationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\conversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\common\\entities\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\common\\entities\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\services\\commentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\businesslogic\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\businesslogic\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\,net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\messagingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\controllers\\messagingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|g:\\work\\coding\\backend\\.net api\\projects\\api projects\\social_media_application\\social_media_application\\social_media_application\\social_media_application\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67FA1966-5AE5-4CCD-AD6B-2A1367640330}|Social_Media_Application\\Social_Media_Application.csproj|solutionrelative:social_media_application\\api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,111 +77,222 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1209,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 1831,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs*",
-              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs*",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T03:00:49.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\EmailService.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\EmailService.cs",
-              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\EmailService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:53:47.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Program.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
-              "RelativeToolTip": "Social_Media_Application\\API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:52:59.375Z",
-              "EditorCaption": ""
+              "Title": "e17b4053-9126-4f13-be89-cc3decf5478e.png - PNG [8500x5154, 32 bit, PNG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png - PNG [8500x5154, 32 bit, PNG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\e17b4053-9126-4f13-be89-cc3decf5478e.png - PNG [8500x5154, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:45:01.78Z",
+              "EditorCaption": " - PNG [8500x5154, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "f8ecb302-847d-48bb-8582-6d545b762bf4.png - PNG [222x193, 32 bit, PNG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png - PNG [222x193, 32 bit, PNG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png - PNG [222x193, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:45:00.586Z",
+              "EditorCaption": " - PNG [222x193, 32 bit, PNG]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CommentService.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\CommentService.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\CommentService.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\CommentService.cs",
-              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\CommentService.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAD4v2AAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:48:11.456Z",
-              "EditorCaption": ""
+              "Title": "55e0ec72-7982-4f95-adc5-5c9199b38121.png - PNG [284x330, 32 bit, PNG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png - PNG [284x330, 32 bit, PNG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\55e0ec72-7982-4f95-adc5-5c9199b38121.png - PNG [284x330, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:44:59.562Z",
+              "EditorCaption": " - PNG [284x330, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "a2c716f8-fe93-44f9-985b-a8af387e8f20.png - PNG [284x330, 32 bit, PNG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png - PNG [284x330, 32 bit, PNG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png - PNG [284x330, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:44:58.248Z",
+              "EditorCaption": " - PNG [284x330, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg - Bitmap [216x233, 24 bit, JPG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg - Bitmap [216x233, 24 bit, JPG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg - Bitmap [216x233, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:44:57.014Z",
+              "EditorCaption": " - Bitmap [216x233, 24 bit, JPG]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IEmailService.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Interfaces\\IEmailService.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IEmailService.cs",
-              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Interfaces\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABcAAAAAAAAAA==",
+              "Title": "a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png - PNG [284x330, 32 bit, PNG]",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+              "RelativeDocumentMoniker": "Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png - PNG [284x330, 32 bit, PNG]",
+              "RelativeToolTip": "Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png - PNG [284x330, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-03T00:44:51.442Z",
+              "EditorCaption": " - PNG [284x330, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Message.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Entities\\Message.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Common\\Entities\\Message.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Entities\\Message.cs",
+              "RelativeToolTip": "Social_Media_Application\\Common\\Entities\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:47:41.926Z",
+              "WhenOpened": "2025-05-02T23:13:12.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Interfaces\\IAuthService.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAFAAAAAAAAAA==",
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Hubs\\ChatHub.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Social_Media_Application\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAkwLYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T02:47:32.228Z",
+              "WhenOpened": "2025-05-02T21:39:39.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\AuthController.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAwwEgAAAATAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "Conversation.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Entities\\Conversation.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\Common\\Entities\\Conversation.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Common\\Entities\\Conversation.cs",
+              "RelativeToolTip": "Social_Media_Application\\Common\\Entities\\Conversation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T01:41:42.129Z",
+              "WhenOpened": "2025-05-02T20:38:40.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConversationRepository.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\ConversationRepository.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\DataAccess\\Repositories\\ConversationRepository.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\DataAccess\\Repositories\\ConversationRepository.cs",
+              "RelativeToolTip": "Social_Media_Application\\DataAccess\\Repositories\\ConversationRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAtwBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T18:42:36.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ConversationService.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\ConversationService.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\ConversationService.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\ConversationService.cs",
+              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\ConversationService.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAjwIwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T18:41:59.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MessagingController.cs",
-              "DocumentMoniker": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\MessagingController.cs",
-              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\MessagingController.cs",
-              "ToolTip": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\MessagingController.cs",
-              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\MessagingController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAawLsAAABrAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Program.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Program.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T18:59:35.596Z",
+              "WhenOpened": "2025-05-02T18:25:15.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
+              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T17:53:25.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\AuthController.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T17:53:13.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAuwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T23:51:22.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MessagingController.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\MessagingController.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\API\\Controllers\\MessagingController.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\API\\Controllers\\MessagingController.cs",
+              "RelativeToolTip": "Social_Media_Application\\API\\Controllers\\MessagingController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwGsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:44:56.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "Social_Media_Application\\BusinessLogic\\Services\\MessageService.cs",
+              "ToolTip": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\BusinessLogic\\Services\\MessageService.cs",
+              "RelativeToolTip": "Social_Media_Application\\BusinessLogic\\Services\\MessageService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAArwFkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T21:58:05.43Z",
               "EditorCaption": ""
             }
           ]

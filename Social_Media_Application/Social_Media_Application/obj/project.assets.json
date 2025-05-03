@@ -4994,11 +4994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application.csproj",
+      "projectUniqueName": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application.csproj",
       "projectName": "Social_Media_Application",
-      "projectPath": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application.csproj",
+      "projectPath": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application.csproj",
       "packagesPath": "C:\\Users\\lyr1c\\.nuget\\packages\\",
-      "outputPath": "G:\\work\\Coding\\backend\\,net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\obj\\",
+      "outputPath": "G:\\work\\Coding\\backend\\.net api\\Projects\\api projects\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\Social_Media_Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

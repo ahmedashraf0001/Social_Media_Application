@@ -20,38 +20,36 @@ namespace Social_Media_Application.DataAccess.Repositories
         {
             var query = _context.conversations.AsQueryable();
 
-            if (options.WithMessages)
-            {
-                query = query.Include(c => c.Messages);
-
-                if (options.PageNumber.HasValue && options.PageSize.HasValue)
-                {
-                    var result = await query
-                        .Where(c => c.CurrentUserId.Equals(User1Id) && c.otherUserId.Equals(User2Id))
-                        .Select(c => new
-                        {
-                            Conversation = c,
-                            PaginatedMessages = c.Messages.Skip((options.PageNumber.Value - 1) * options.PageSize.Value)
-                                                           .Take(options.PageSize.Value)
-                        })
-                        .FirstOrDefaultAsync();
-
-                    if (result != null)
-                    {
-                        result.Conversation.Messages = result.PaginatedMessages.ToList();
-                        return result.Conversation;
-                    }
-                }
-            }
-
             if (options.WithUserInitiated)
                 query = query.Include(c => c.CurrentUser);
 
             if (options.WithUserReceived)
                 query = query.Include(c => c.OtherUser);
 
-            return await query.FirstOrDefaultAsync(c => c.CurrentUserId.Equals(User1Id) && c.otherUserId.Equals(User2Id));
+            // First: Get the conversation
+            var conversation = await query.FirstOrDefaultAsync(c =>
+                (c.CurrentUserId == User1Id && c.otherUserId == User2Id) ||
+                (c.CurrentUserId == User2Id && c.otherUserId == User1Id));
+
+            if (conversation == null)
+                return null;
+
+            // Second: Get messages separately if requested
+            if (options.WithMessages && options.PageNumber.HasValue && options.PageSize.HasValue)
+            {
+                int skip = (options.PageNumber.Value - 1) * options.PageSize.Value;
+
+                conversation.Messages = await _context.messages
+                    .Where(m => m.ConversationId == conversation.Id)
+                    .OrderByDescending(m => m.SentAt) // Or descending if preferred
+                    .Skip(skip)
+                    .Take(options.PageSize.Value)
+                    .ToListAsync();
+            }
+
+            return conversation;
         }
+
         public async Task<Conversation?> GetConversationByIdAsync(int conversationId, ConversationQueryOptions options)
         {
             var query = _context.conversations.AsQueryable();
@@ -88,7 +86,6 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             return await query.FirstOrDefaultAsync(c => c.Id == conversationId);
         }
-
         public async Task<List<Conversation>> GetUserConversationsAsync(string userId, ConversationQueryOptions options)
         {
             var query = _context.conversations.AsQueryable();
@@ -131,7 +128,7 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             if (!string.IsNullOrEmpty(searchQuery.Keyword))
             {
-                query = query.Where(c => c.LastMessageContent.Contains(searchQuery.Keyword) || c.ConversationName.Contains(searchQuery.Keyword));
+                query = query.Where(c => c.LastMessageContent.Contains(searchQuery.Keyword));
             }
 
             if (searchQuery.StartDate.HasValue)
@@ -178,7 +175,7 @@ namespace Social_Media_Application.DataAccess.Repositories
                 (c.CurrentUserId == entity.otherUserId && c.otherUserId == entity.CurrentUserId));
 
             if (existingConversation != null)
-                throw new InvalidOperationException("Conversation already exists.");
+                return;
 
             await base.AddAsync(entity);
         }

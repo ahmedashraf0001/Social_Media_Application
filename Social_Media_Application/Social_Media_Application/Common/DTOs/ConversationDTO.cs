@@ -17,6 +17,10 @@
     }
     public class ConversationCreateDTO
     {
-        public string otherUserId { get; set; }
+        public string CurrentUserId { get; set; }
+        public string OtherUserId { get; set; }
+        public DateTime? LastMessageAt { get; set; }
+        public string? LastMessageContent { get; set; }
+
     }
 }

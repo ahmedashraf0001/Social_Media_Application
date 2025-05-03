@@ -33,7 +33,9 @@ namespace Social_Media_Application.BusinessLogic.Services
                 new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim(ClaimTypes.Email, user.Email),
+                new Claim("FirstName", user.FirstName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("Image",user.PhotoUrl)
             };
             foreach (var userRole in userRoles)
             {

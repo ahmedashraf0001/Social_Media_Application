@@ -6,12 +6,9 @@ namespace Social_Media_Application.Common.Entities
     public class Conversation
     {
         [Key]
-        public int Id { get; set; } 
-
-        public string CurrentUserId { get; set; } 
-        public string otherUserId { get; set; } 
-        public string ConversationName { get; set; }
-        public string PhotoURL { get; set; }
+        public int Id { get; set; }
+        public string CurrentUserId { get; set; }       
+        public string otherUserId { get; set; }    
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? LastMessageAt { get; set; }

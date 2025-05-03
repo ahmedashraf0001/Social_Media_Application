@@ -7,6 +7,8 @@ using Social_Media_Application.Common.Utils;
 using Social_Media_Application.DataAccess.Data;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.SignalR;
+using Social_Media_Application.Hubs;
 
 namespace Social_Media_Application.API
 {
@@ -42,8 +44,23 @@ namespace Social_Media_Application.API
                     ValidAudience = builder.Configuration["JWT:ValidAudience"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"])),
                 };
-            });
+                options.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = context =>
+                    {
+                        var accessToken = context.Request.Query["access_token"];
 
+                        var path = context.HttpContext.Request.Path;
+                        if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/chat"))
+                        {
+                            context.Token = accessToken;
+                        }
+
+                        return Task.CompletedTask;
+                    }
+                };
+            });
+            builder.Services.AddSignalR();
             builder.Services.AddProjectServices();
 
             builder.Services.AddControllers();
@@ -82,13 +99,13 @@ namespace Social_Media_Application.API
             });
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll",
-                    builder =>
-                    {
-                        builder.AllowAnyOrigin()
-                            .AllowAnyMethod()
-                            .AllowAnyHeader();
-                    });
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    policy.WithOrigins("http://127.0.0.1:5500", "http://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+                });
             });
             var app = builder.Build();
 
@@ -97,8 +114,12 @@ namespace Social_Media_Application.API
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-                app.UseCors("AllowAll");
             }
+            app.UseStaticFiles();
+            app.UseCors("AllowFrontend");
+
+            app.MapHub<ChatHub>("/chat").RequireCors("AllowFrontend");
+
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
