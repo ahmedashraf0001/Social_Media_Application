@@ -11,10 +11,13 @@ namespace Social_Media_Application.BusinessLogic.Services
     public class CommentService : ICommentService
     {
         private readonly ICommentRepository _commentRepository;
-
-        public CommentService(ICommentRepository commentRepository)
+        private readonly INotificationService _notificationService;
+        private readonly IPostRepository _postRepository;
+        public CommentService(ICommentRepository commentRepository, INotificationService notificationService, IPostRepository postRepository)
         {
             _commentRepository = commentRepository;
+            _notificationService = notificationService;
+            _postRepository = postRepository;
         }
 
         public async Task<CommentDTO> AddCommentAsync(string userId, CreateCommentDTO createCommentDTO)
@@ -38,6 +41,11 @@ namespace Social_Media_Application.BusinessLogic.Services
                 UserId = userId,
                 CreatedAt = DateTime.UtcNow,
             };
+            var post = await _postRepository.GetByIdAsync(createCommentDTO.PostId);
+
+            await _notificationService.NotifyComment(post.UserId, userId, post.Id);
+
+            await _commentRepository.UpdateCommentCounter(comment.PostId, true);
 
             await _commentRepository.AddAsync(comment);
 
@@ -82,6 +90,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             try
             {
                 await _commentRepository.DeleteAsync(comment);
+                await _commentRepository.UpdateCommentCounter(comment.PostId, false);
             }
             catch (Exception ex)
             {

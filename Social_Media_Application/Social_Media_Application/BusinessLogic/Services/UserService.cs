@@ -12,11 +12,13 @@ namespace Social_Media_Application.BusinessLogic.Services
         private readonly IUserRepository _userRepository;
         private readonly IUserFollowRepository _userFollowRepository;
         private readonly IMediaService _mediaService;
-        public UserService(IUserRepository userRepository, IUserFollowRepository userFollowRepository, IMediaService mediaService)
+        private readonly INotificationService _notificationService;
+        public UserService(INotificationService notificationService, IUserRepository userRepository, IUserFollowRepository userFollowRepository, IMediaService mediaService)
         {
             _userRepository = userRepository;
             _userFollowRepository = userFollowRepository;
             _mediaService = mediaService;
+            _notificationService = notificationService;
         }
 
         public async Task DeleteUserProfileAsync(string userId)
@@ -25,7 +27,12 @@ namespace Social_Media_Application.BusinessLogic.Services
         }
         public async Task ToggleFollowAsync(string followingId, string followedId)
         {
-            await _userFollowRepository.ToggleFollowAsync(followingId, followedId);
+            var model = await _userFollowRepository.ToggleFollowAsync(followingId, followedId);
+
+            if (model == "Followed") 
+            {
+               await _notificationService.NotifyFollow(followedId,followingId);
+            }
         }
         public async Task<UserProfileDTO> GetUserProfileAsync(string? currentUserId, string userId, UserQueryOptions options)
         {
@@ -45,6 +52,10 @@ namespace Social_Media_Application.BusinessLogic.Services
                 Id = user.Id,
                 Username = user.UserName,
                 ProfilePictureUrl = user.PhotoUrl,
+                SecondaryPictureUrl = user.SecondaryPhotoUrl,
+                Bio = user.Bio,
+                Location = user.Location,
+                JoinedIn = user.JoinedIn,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 FollowersCount = user.FollowersCount,
@@ -64,7 +75,50 @@ namespace Social_Media_Application.BusinessLogic.Services
                     AuthorUsername = user.UserName,
                     LikeCount = p.LikesCount,
                     CommentCount = p.CommentsCount,
-                    
+                    AuthorImage = user.PhotoUrl,
+                    IsLikedByCurrentUser = !string.IsNullOrEmpty(currentUserId) &&
+                                           p.Likes != null &&
+                                           p.Likes.Any(l => l.UserId == currentUserId)
+                }).ToList();
+            }
+            return userProfile;
+        }
+        public async Task<UserProfileDTO> GetCurrentUser(string? currentUserId, UserQueryOptions options)
+        {
+            var user = await _userRepository.GetUserAsync(currentUserId, options);
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            var userProfile = new UserProfileDTO
+            {
+                Id = user.Id,
+                Username = user.UserName,
+                ProfilePictureUrl = user.PhotoUrl,
+                SecondaryPictureUrl = user.SecondaryPhotoUrl,
+                Bio = user.Bio,
+                Location = user.Location,
+                JoinedIn = user.JoinedIn,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                FollowersCount = user.FollowersCount,
+                FollowingCount = user.FollowingCount,
+                IsFollowedByCurrentUser = false
+            };
+            if (options.WithPosts && user.Posts != null && user.Posts.Any())
+            {
+                userProfile.Posts = user.Posts.Select(p => new PostDTO
+                {
+                    Id = p.Id,
+                    Content = p.Content,
+                    MediaUrl = p.MediaUrl,
+                    MediaType = p.MediaType,
+                    CreatedAt = p.CreatedAt,
+                    UserId = p.UserId,
+                    AuthorUsername = user.UserName,
+                    LikeCount = p.LikesCount,
+                    CommentCount = p.CommentsCount,
                     IsLikedByCurrentUser = !string.IsNullOrEmpty(currentUserId) &&
                                            p.Likes != null &&
                                            p.Likes.Any(l => l.UserId == currentUserId)
@@ -138,17 +192,34 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             if (!string.IsNullOrEmpty(updateUserProfileDTO.LastName))
                 user.LastName = updateUserProfileDTO.LastName;
+
+            if (!string.IsNullOrEmpty(updateUserProfileDTO.Bio))
+                user.Bio = updateUserProfileDTO.Bio;
+
+            if (!string.IsNullOrEmpty(updateUserProfileDTO.Location))
+                user.Location = updateUserProfileDTO.Location;
+
             if (updateUserProfileDTO.ProfilePicture != null)
             {
                 if (!string.IsNullOrEmpty(user.PhotoUrl))
-                {
                     await _mediaService.DeleteMediaAsync(user.PhotoUrl);
-                }
+
                 var (photoUrl, _) = await _mediaService.UploadMediaAsync(updateUserProfileDTO.ProfilePicture);
                 user.PhotoUrl = photoUrl;
             }
+
+            if (updateUserProfileDTO.SecondaryProfilePicture != null)
+            {
+                if (!string.IsNullOrEmpty(user.SecondaryPhotoUrl))
+                    await _mediaService.DeleteMediaAsync(user.SecondaryPhotoUrl);
+
+                var (secondaryUrl, _) = await _mediaService.UploadMediaAsync(updateUserProfileDTO.SecondaryProfilePicture);
+                user.SecondaryPhotoUrl = secondaryUrl;
+            }
+
             await _userRepository.UpdateAsync(user);
         }
+
         public async Task<List<UserProfileDTO>> SearchUsersAsync(string? currentUserId, string searchTerm, int pageNumber, int pageSize = 12)
         {
             var users = await _userRepository.SearchUsersAsync(searchTerm, pageNumber, pageSize);
@@ -167,6 +238,10 @@ namespace Social_Media_Application.BusinessLogic.Services
                     Id = user.Id,
                     Username = user.UserName,
                     ProfilePictureUrl = user.PhotoUrl,
+                    SecondaryPictureUrl = user.SecondaryPhotoUrl,
+                    Bio = user.Bio,
+                    Location = user.Location,
+                    JoinedIn = user.JoinedIn,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     FollowersCount = user.FollowersCount,

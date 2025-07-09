@@ -42,7 +42,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                 authClaims.Add(new Claim(ClaimTypes.Role, userRole));
             }
             var accessToken = GenerateAccessToken(authClaims);
-            var expiration = DateTime.UtcNow.AddHours(3);
+            var expiration = DateTime.UtcNow.AddDays(30);
 
             return new TokenResponseDTO
             {
@@ -150,7 +150,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             {
                 Issuer = _configuration["JWT:ValidIssuer"],
                 Audience = _configuration["JWT:ValidAudience"],
-                Expires = DateTime.UtcNow.AddHours(3),
+                Expires = DateTime.UtcNow.AddDays(30),
                 SigningCredentials = new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256),
                 Subject = new ClaimsIdentity(claims)
             };

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Social_Media_Application.BusinessLogic.Interfaces;
 using Social_Media_Application.Common.Entities;
 using Social_Media_Application.DataAccess.Data;
 using Social_Media_Application.DataAccess.Interfaces;
@@ -40,43 +41,58 @@ namespace Social_Media_Application.DataAccess.Repositories
                 .ToList();
             return pagedResult;
         }
-        public async Task ToggleFollowAsync(string followingId, string followedId)
+        public async Task<string> ToggleFollowAsync(string followerId, string followedId)
         {
-            var userFollow = await _set
-                .FirstOrDefaultAsync(uf => uf.FollowerId == followingId && uf.FollowedId == followedId);
+            var userFollow = await _set.FirstOrDefaultAsync(uf =>
+                uf.FollowerId == followerId && uf.FollowedId == followedId);
 
-            var follower = await _context.Users.FindAsync(followingId);
+            var follower = await _context.Users.FindAsync(followerId);
             var followed = await _context.Users.FindAsync(followedId);
 
             if (follower == null || followed == null)
-            {
                 throw new Exception("One or both users not found");
-            }
 
             if (userFollow != null)
             {
                 _set.Remove(userFollow);
-                if (follower.FollowingCount > 0)
-                    follower.FollowingCount--;
-                if (followed.FollowersCount > 0)
-                    followed.FollowersCount--;
+                follower.FollowingCount = Math.Max(follower.FollowingCount - 1, 0);
+                followed.FollowersCount = Math.Max(followed.FollowersCount - 1, 0);
+                await _context.SaveChangesAsync();
+                return "UnFollowed";
             }
-            else
+
+            await _set.AddAsync(new UserFollow
             {
-                userFollow = new UserFollow
+                FollowerId = followerId,
+                FollowedId = followedId
+            });
+
+            var existingConversation = await _context.conversations.FirstOrDefaultAsync(c =>
+                (c.CurrentUserId == followerId && c.otherUserId == followedId) ||
+                (c.CurrentUserId == followedId && c.otherUserId == followerId));
+
+            if (existingConversation == null)
+            {
+                await _context.conversations.AddAsync(new Conversation
                 {
-                    FollowerId = followingId,
-                    FollowedId = followedId
-                };
-                await _set.AddAsync(userFollow);
-                follower.FollowingCount++;
-                followed.FollowersCount++;
+                    CurrentUserId = followerId,
+                    otherUserId = followedId,
+                    CreatedAt = DateTime.UtcNow,
+                    LastMessageAt = DateTime.UtcNow,
+                    LastMessageContent = "Start New Conversation"
+                });
             }
+
+            follower.FollowingCount++;
+            followed.FollowersCount++;
+
             _context.Users.Update(follower);
             _context.Users.Update(followed);
 
             await _context.SaveChangesAsync();
+            return "Followed";
         }
+
         public async Task<bool> IsFollowingAsync(string followerId, string followedId)
         {
             return await _context.userFollows

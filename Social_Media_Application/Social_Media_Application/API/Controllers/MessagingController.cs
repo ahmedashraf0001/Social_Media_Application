@@ -321,5 +321,24 @@ namespace Social_Media_Application.API.Controllers
                 return StatusCode(500, new { Message = "Internal Server Error.", detail = ex.Message });
             }
         }
+        [HttpPut("messages/MarkAsRead/{messageId:int}")]
+        public async Task<ActionResult<MessageDTO?>> MarkAsReadAsync(int messageId)
+        {
+            try
+            {
+                await _messageService.MarkMessageAsReadAsync(messageId);
+
+                return Ok($"Message {messageId} Marked As Read!");
+
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "Internal Server Error.", detail = ex.Message });
+            }
+        }
     }
 }

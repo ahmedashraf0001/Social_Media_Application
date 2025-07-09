@@ -18,6 +18,7 @@ namespace Social_Media_Application.DataAccess.Data
         public DbSet<UserFollow> userFollows { get; set; }
         public DbSet<Conversation> conversations { get; set; }
         public DbSet<Message> messages { get; set; }
+        public DbSet<Notification> notifications { get; set; }
 
         public SocialDBContext()
         { }
@@ -109,7 +110,20 @@ namespace Social_Media_Application.DataAccess.Data
                 .HasOne(m => m.Receiver)
                 .WithMany(u => u.ReceivedMessages)
                 .HasForeignKey(m => m.ReceiverId)
-                .OnDelete(DeleteBehavior.NoAction); 
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.Entity<Notification>()
+                .HasOne(n => n.ToUser)
+                .WithMany(u => u.ReceivedNotifications)
+                .HasForeignKey(n => n.ToUserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Notification>()
+                .HasOne(n => n.FromUser)
+                .WithMany(u => u.SentNotifications)
+                .HasForeignKey(n => n.FromUserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
 
             DatabaseSeeder.Seed(builder);
         }

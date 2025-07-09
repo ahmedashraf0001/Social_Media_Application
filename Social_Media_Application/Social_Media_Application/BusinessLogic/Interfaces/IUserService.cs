@@ -13,5 +13,6 @@ namespace Social_Media_Application.BusinessLogic.Interfaces
         Task<List<UserProfileDTO>> GetFollowersAsync(string? currentUserId, string userId, int pageNumber, int pageSize = 12);
         Task<List<UserProfileDTO>> GetFollowedAsync(string? currentUserId, string userId, int pageNumber, int pageSize = 12);
         Task<List<UserProfileDTO>> SearchUsersAsync(string? currentUserId, string searchTerm, int pageNumber, int pageSize = 12);
+        Task<UserProfileDTO> GetCurrentUser(string currentUserId, UserQueryOptions options);
     }
 }

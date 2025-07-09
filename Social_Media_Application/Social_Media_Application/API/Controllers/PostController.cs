@@ -62,7 +62,7 @@ namespace Social_Media_Application.API.Controllers
             try
             {
                 var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var model = await _postService.GenerateFeedAsync(currentUserId, new PostQueryOptions() { PageNumber = pageNumber, PageSize = pageSize });
+                var model = await _postService.GenerateFeedAsync(currentUserId, new PostQueryOptions() { PageNumber = pageNumber, PageSize = pageSize, IncludeAuthorDetails = true });
                 return Ok(model);
             }
             catch (InvalidOperationException ex)

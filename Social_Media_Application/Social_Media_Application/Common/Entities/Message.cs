@@ -11,6 +11,8 @@
         public string Content { get; set; }
         public DateTime SentAt { get; set; }
         public bool IsRead { get; set; } = false;
+        public bool IsEdited { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
         public User? Sender { get; set; }
         public User? Receiver { get; set; }
 

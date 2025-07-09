@@ -138,6 +138,7 @@ namespace Social_Media_Application.DataAccess.Repositories
                     CreatedAt = post.CreatedAt,
                     UserId = post.UserId,
                     AuthorUsername = post.User?.FirstName + " " + post.User?.LastName,
+                    AuthorImage = post.User?.PhotoUrl,
                     LikeCount = post.LikesCount,
                     CommentCount = post.CommentsCount,
                     IsLikedByCurrentUser = isLikedByCurrentUser

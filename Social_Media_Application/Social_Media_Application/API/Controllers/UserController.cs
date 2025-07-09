@@ -18,7 +18,24 @@ namespace Social_Media_Application.API.Controllers
         {
             _userService = userService;
         }
-
+        [HttpGet]
+        [Authorize]
+        public async Task<ActionResult<UserProfileDTO>> GetCurrentUser()
+        {
+            try
+            {
+                string? currentUserId = User.Identity?.IsAuthenticated == true
+                                      ? User.FindFirstValue(ClaimTypes.NameIdentifier)
+                                      : null;
+                var options = new UserQueryOptions { WithPosts = false };
+                var userProfile = await _userService.GetCurrentUser(currentUserId, options);
+                return Ok(userProfile);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
         [HttpGet("{userId}")]
         public async Task<ActionResult<UserProfileDTO>> GetUserProfile(string userId)
         {

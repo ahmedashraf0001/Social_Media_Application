@@ -6,11 +6,12 @@
 
         public string CurrentUserId { get; set; }
         public string OtherUserId { get; set; }
+        public int UnreadMessages { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public string? LastMessageContent { get; set; }
         public DateTime? LastMessageAt { get; set; }
-
+        public bool LastMessageRead { get; set; }
         public string? ConversationName { get; set; }
         public string? PhotoUrl { get; set; }
     }

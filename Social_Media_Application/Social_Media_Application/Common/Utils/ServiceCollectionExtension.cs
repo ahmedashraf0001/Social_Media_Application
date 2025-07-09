@@ -5,6 +5,7 @@ using Social_Media_Application.Common.Entities;
 using Social_Media_Application.DataAccess.Interfaces;
 using Social_Media_Application.DataAccess.Repositories;
 using Social_Media_Application.Hubs;
+using Social_Media_Application.Interfaces;
 
 namespace Social_Media_Application.Common.Utils
 {
@@ -19,10 +20,12 @@ namespace Social_Media_Application.Common.Utils
             services.AddScoped<IUserFollowRepository, UserFollowRepository>();
             services.AddScoped<IConversationRepository, ConversationRepository>();
             services.AddScoped<IMessageRepository, MessageRepository>();
+            services.AddScoped<INotificationRepository, NotificationRepository>();
 
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<INotificationService, NotificationService>();
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<IMediaService, MediaService>();

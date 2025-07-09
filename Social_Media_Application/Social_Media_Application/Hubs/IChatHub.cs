@@ -10,5 +10,8 @@ namespace Social_Media_Application.Hubs
         Task UserIsTyping(string name);
         Task NotifyOnline(string userId, int conversationId);
         Task NotifyOffline(string userId, int conversationId);
+        Task MessageMarkedAsRead(MessageDTO message);
+        Task ReceiveNotification(string message);
+
     }
 }

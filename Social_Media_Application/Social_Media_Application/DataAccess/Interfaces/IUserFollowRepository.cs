@@ -6,7 +6,7 @@ namespace Social_Media_Application.DataAccess.Interfaces
     {
         Task<List<UserFollow>> GetFollowersAsync(string userId, int pageNumber, int pageSize = 12);
         Task<List<UserFollow>> GetFollowedAsync(string userId, int pageNumber, int pageSize = 12);
-        Task ToggleFollowAsync(string followingId, string followedId);
+        Task<string> ToggleFollowAsync(string followingId, string followedId);
         Task<bool> IsFollowingAsync(string followerId, string followedId);
     }
 }

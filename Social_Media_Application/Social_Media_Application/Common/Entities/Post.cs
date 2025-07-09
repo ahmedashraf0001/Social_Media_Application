@@ -15,12 +15,12 @@ namespace Social_Media_Application.Common.Entities
         [Key]
         public int Id { get; set; }
 
-        [StringLength(500)]
+        [StringLength(2000)]
         public string Content { get; set; }
         public string? MediaUrl { get; set; }
         public MediaType? MediaType { get; set; }
-        [Range(0, int.MaxValue)]
 
+        [Range(0, int.MaxValue)]
         public int LikesCount { get; set; }
         [Range(0, int.MaxValue)]
 

@@ -78,7 +78,6 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             return await query.FirstOrDefaultAsync();
         }
-
         public async Task<List<User>> GetAllAsync(int pageNumber, int pageSize = 12)
         {
             var query = await _set

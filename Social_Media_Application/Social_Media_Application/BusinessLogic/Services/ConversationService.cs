@@ -35,31 +35,38 @@ namespace Social_Media_Application.BusinessLogic.Services
 
             return conversation;
         }
-        
-        public Task<ConversationDTO> MapToDTOAsync(Conversation conversation, User otherUser)
+
+        public async Task<ConversationDTO> MapToDTOAsync(Conversation conversation, User otherUser)
         {
-            return Task.FromResult(new ConversationDTO()
+            var lastMessageRead = await _conversationRepository.LastMessageReadCheck(conversation.CurrentUserId == otherUser.Id ? conversation.otherUserId : conversation.CurrentUserId, conversation.Id);
+
+            return new ConversationDTO
             {
                 Id = conversation.Id,
-                CurrentUserId = conversation.CurrentUserId,
-                OtherUserId = conversation.otherUserId,
+                CurrentUserId = conversation.CurrentUserId == otherUser.Id ?conversation.otherUserId : conversation.CurrentUserId,
+                OtherUserId = otherUser.Id,
                 CreatedAt = conversation.CreatedAt,
                 LastMessageAt = conversation.LastMessageAt,
+                LastMessageRead = lastMessageRead,
+                UnreadMessages = await _conversationRepository.GetNumOfUnreadMessages(conversation.Id ,conversation.CurrentUserId == otherUser.Id ?conversation.otherUserId : conversation.CurrentUserId),
                 LastMessageContent = conversation.LastMessageContent,
                 PhotoUrl = otherUser.PhotoUrl,
-                ConversationName = otherUser.FirstName + " " + otherUser.LastName,
+                ConversationName = $"{otherUser.FirstName} {otherUser.LastName}",
                 Messages = conversation.Messages.Select(e => new MessageDTO
                 {
                     Id = e.Id,
-                    ConversationId = e.Id,
+                    ConversationId = e.ConversationId,
                     SenderId = e.SenderId,
                     ReceiverId = e.ReceiverId,
                     Content = e.Content,
+                    IsEdited = e.IsEdited,
+                    IsDeleted = e.IsDeleted,
                     IsRead = e.IsRead,
                     SentAt = e.SentAt
                 }).ToList()
-            });
+            };
         }
+
         public async Task DeleteConversationAsync(int conversationId)
         {
             var result = await _conversationRepository.GetConversationByIdAsync(conversationId, new ConversationQueryOptions());
@@ -127,6 +134,8 @@ namespace Social_Media_Application.BusinessLogic.Services
                     CurrentUserId = conversation.CurrentUserId,
                     OtherUserId = conversation.OtherUserId,
                     CreatedAt = conversation.CreatedAt,
+                    UnreadMessages = await _conversationRepository.GetNumOfUnreadMessages(conversation.Id, conversation.CurrentUserId),
+                    LastMessageRead = conversation.LastMessageRead, 
                     LastMessageAt = conversation.LastMessageAt,
                     LastMessageContent = conversation.LastMessageContent,
                     ConversationName = conversation.ConversationName,
@@ -143,17 +152,6 @@ namespace Social_Media_Application.BusinessLogic.Services
             if (result == null)
             {
                 throw new InvalidOperationException("No conversations found for the specified users.");
-            }
-
-            var messagesToUpdate = result.Messages.Where(m => !m.IsRead).ToList();
-
-            if (messagesToUpdate.Any())
-            {
-                foreach (var message in messagesToUpdate)
-                {
-                    message.IsRead = true;
-                }
-                await _conversationRepository.SaveChangesAsync();
             }
 
             var otherUser = await GetOtherUserAsync(result.CurrentUserId == CurrentUserId ? result.otherUserId : result.CurrentUserId);

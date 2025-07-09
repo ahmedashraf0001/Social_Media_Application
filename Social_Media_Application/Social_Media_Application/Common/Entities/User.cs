@@ -11,6 +11,9 @@ namespace Social_Media_Application.Common.Entities
         public string LastName { get; set; }
         [StringLength(200)]
         public string? Bio { get; set; }
+        public string? Location { get; set; }
+        public DateTime JoinedIn { get; set; } = DateTime.Now;
+        public string? SecondaryPhotoUrl { get; set; }
         public string? PhotoUrl { get; set; }
         [Range(0, int.MaxValue)]
         public int FollowersCount { get; set; }
@@ -29,5 +32,8 @@ namespace Social_Media_Application.Common.Entities
 
         public ICollection<Message>? SentMessages { get; set; }
         public ICollection<Message>? ReceivedMessages { get; set; }
+
+        public ICollection<Notification> ReceivedNotifications { get; set; }
+        public ICollection<Notification> SentNotifications { get; set; }
     }
 }

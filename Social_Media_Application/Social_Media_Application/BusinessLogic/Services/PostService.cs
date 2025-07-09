@@ -13,14 +13,17 @@ namespace Social_Media_Application.BusinessLogic.Services
         private readonly IPostRepository _postRepository;
         private readonly IMediaService _mediaService;
         private readonly IPostLikeRepository _postLikeRepository;
+        private readonly INotificationService _notificationService;
         public PostService(
             IPostRepository postRepository,
             IMediaService mediaService,
-            IPostLikeRepository postLikeRepository) 
+            IPostLikeRepository postLikeRepository,
+            INotificationService notificationService ) 
         { 
             _postRepository = postRepository; 
             _mediaService = mediaService;
             _postLikeRepository = postLikeRepository;
+            _notificationService = notificationService;
         }
         public async Task<PostDTO> CreatePostAsync(string currentUserId, PostCreateDTO postDTO)
         {
@@ -53,6 +56,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                 MediaUrl = model.MediaUrl,
                 MediaType = model.MediaType,
                 AuthorUsername = model.User.FirstName + " " + model.User.LastName,
+                AuthorImage = model.User.PhotoUrl
             };
             return response;
         }
@@ -92,6 +96,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                     LikeCount = model.LikesCount,
                     CommentCount = model.CommentsCount,
                     IsLikedByCurrentUser = (model.UserId == currentUserId) ? true : false,
+                    AuthorImage = model.User.PhotoUrl
                 };
                 return postDTO;
             }
@@ -115,6 +120,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                         CreatedAt = post.CreatedAt,
                         UserId = post.UserId,
                         AuthorUsername = post.User.FirstName + " " + post.User.LastName,
+                        AuthorImage = post.User.PhotoUrl,
                         LikeCount = post.LikesCount,
                         CommentCount = post.CommentsCount,
                         IsLikedByCurrentUser = (post.UserId == currentUserId) ? true : false,
@@ -167,6 +173,7 @@ namespace Social_Media_Application.BusinessLogic.Services
             else
             {
                 await _postLikeRepository.CreateLike(postId, userId);
+                await _notificationService.NotifyLike(post.UserId, userId, postId);
                 post.LikesCount++;
                 await _postRepository.UpdateAsync(post);
                 return true;

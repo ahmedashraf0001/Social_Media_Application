@@ -32,7 +32,11 @@ namespace Social_Media_Application.BusinessLogic.Services
         public async Task<MessageDTO?> EditMessageAsync(int messageId, string content)
         {
             Message message = await _messageRepository.GetMessageByIdAsync(messageId, new MessageQueryOptions());
+            var convo = await _conversationRepository.GetByIdAsync(message.ConversationId);
             message.Content = content;
+            message.IsEdited = true;
+            convo.LastMessageAt = DateTime.Now;
+            convo.LastMessageContent = $"Edited: {content}";        
             await _messageRepository.SaveChangesAsync();
             return await MapToDTOAsync(message);
         }
@@ -58,7 +62,9 @@ namespace Social_Media_Application.BusinessLogic.Services
                 ReceiverId = message.ReceiverId,
                 Content = message.Content,
                 IsRead = message.IsRead,
-                SentAt = message.SentAt
+                SentAt = message.SentAt,
+                IsDeleted = message.IsDeleted,
+                IsEdited = message.IsEdited, 
             };
 
             return Task.FromResult(messageDTOs); 
@@ -108,7 +114,7 @@ namespace Social_Media_Application.BusinessLogic.Services
                 ConversationId = result.Id,
                 Content = messageDTO.Content,
                 SenderId = senderId,
-                ReceiverId = result != null ? result.otherUserId : messageDTO.ReceiverId,
+                ReceiverId = messageDTO.ReceiverId,
                 SentAt = DateTime.UtcNow
             };
             result.LastMessageAt = DateTime.UtcNow;

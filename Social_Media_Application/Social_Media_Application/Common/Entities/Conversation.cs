@@ -9,7 +9,6 @@ namespace Social_Media_Application.Common.Entities
         public int Id { get; set; }
         public string CurrentUserId { get; set; }       
         public string otherUserId { get; set; }    
-
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? LastMessageAt { get; set; }
         public string? LastMessageContent { get; set; } = string.Empty;

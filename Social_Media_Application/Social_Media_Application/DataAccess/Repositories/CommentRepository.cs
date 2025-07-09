@@ -44,6 +44,24 @@ namespace Social_Media_Application.DataAccess.Repositories
 
             return await query.ToListAsync();
         }
+        public async Task UpdateCommentCounter(int postId, bool increment)
+        {
+            var post = await _context.posts.FindAsync(postId);
+            if (post != null)
+            {
+                if (increment)
+                {
+                    post.CommentsCount++;
+
+                }
+                else
+                {
+                    post.CommentsCount--;
+                }
+                await _context.SaveChangesAsync();
+            }
+        }
+
         public async Task<List<Comment>> GetByUserIdAsync(string userId, CommentQueryOptions options)
         {
             IQueryable<Comment> query = _set.Where(u => u.UserId == userId);

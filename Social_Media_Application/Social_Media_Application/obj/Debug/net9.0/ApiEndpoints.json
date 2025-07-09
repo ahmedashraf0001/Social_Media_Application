@@ -433,6 +433,32 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
+    "Method": "MarkAsReadAsync",
+    "RelativePath": "api/Messaging/messages/MarkAsRead/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.MessageDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.MessagingController",
     "Method": "SearchForMessages",
     "RelativePath": "api/Messaging/messages/Search",
     "HttpMethod": "GET",
@@ -535,6 +561,196 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.MessageDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "Create",
+    "RelativePath": "api/Notification/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "Social_Media_Application.Common.DTOs.NotiUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "Delete",
+    "RelativePath": "api/Notification/delete/{notificationId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/Notification/MarkAsRead/{notificationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "GetReceiver",
+    "RelativePath": "api/Notification/Receiver",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "GetSender",
+    "RelativePath": "api/Notification/Sender/{fromUserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromUserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "GetUnreadForUser",
+    "RelativePath": "api/Notification/Unread",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "GetUnreadCountForUser",
+    "RelativePath": "api/Notification/UnreadCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.NotificationController",
+    "Method": "Update",
+    "RelativePath": "api/Notification/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "Social_Media_Application.Common.DTOs.NotiUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Social_Media_Application.Common.DTOs.NotiDTO, Social_Media_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -820,6 +1036,26 @@
   },
   {
     "ContainingType": "Social_Media_Application.API.Controllers.UserController",
+    "Method": "GetCurrentUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Social_Media_Application.Common.DTOs.UserProfileDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Social_Media_Application.API.Controllers.UserController",
     "Method": "DeleteUserAccount",
     "RelativePath": "api/User",
     "HttpMethod": "DELETE",
@@ -961,7 +1197,22 @@
         "IsRequired": false
       },
       {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "ProfilePicture",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "SecondaryProfilePicture",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }

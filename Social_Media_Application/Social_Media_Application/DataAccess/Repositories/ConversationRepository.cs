@@ -16,6 +16,14 @@ namespace Social_Media_Application.DataAccess.Repositories
         {
             _context = context;
         }
+        public async Task<bool> LastMessageReadCheck(string userId, int convoId)
+        {
+            return !await _context.messages
+                .AnyAsync(m => m.ConversationId == convoId && m.ReceiverId == userId && !m.IsRead);
+        }
+
+
+
         public async Task<Conversation?> GetConversationBetweenUsersAsync(string User1Id, string User2Id, ConversationQueryOptions options)
         {
             var query = _context.conversations.AsQueryable();
@@ -110,6 +118,12 @@ namespace Social_Media_Application.DataAccess.Repositories
             var result = await query.ToListAsync();
 
             return result;
+        }
+        public async Task<int> GetNumOfUnreadMessages(int convoId, string userId)
+        {
+            return await _context.messages
+                .Where(e => e.ConversationId == convoId && !e.IsRead && e.ReceiverId == userId)
+                .CountAsync();
         }
 
         public async Task<List<Conversation>> SearchConversationsAsync(ConversationSearchQuery searchQuery, ConversationQueryOptions options)

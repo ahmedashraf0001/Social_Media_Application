@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Social_Media_Application.BusinessLogic.Interfaces;
-using Social_Media_Application.BusinessLogic.Services;
 using Social_Media_Application.Common.DTOs;
 
 namespace Social_Media_Application.API.Controllers
@@ -52,7 +49,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
         [HttpPost("forgot-password")]
-        [Authorize]
         public async Task<ActionResult> ForgotPassword(ForgotPasswordRequestDTO model)
         {
             try
@@ -70,7 +66,6 @@ namespace Social_Media_Application.API.Controllers
             }
         }
         [HttpPost("reset-password")]
-        [Authorize]
         public async Task<ActionResult> ResetPassword(ResetPasswordRequestDTO model)
         {
             try

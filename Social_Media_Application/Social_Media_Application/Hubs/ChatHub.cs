@@ -13,13 +13,16 @@ namespace Social_Media_Application.Hubs
         private readonly IMessageService _messageService;
         private readonly ConnectionMapping _connectionMapping;
         private readonly IUserRepository _userRepository;
+        private readonly IHubContext<ChatHub, IChatHub> _hubContext;
+
         public ChatHub(IConversationService conversationSerivce, ConnectionMapping connectionMapping,
-                       IMessageService messageService, IUserRepository userRepository)
+                       IMessageService messageService, IUserRepository userRepository, IHubContext<ChatHub, IChatHub> hubContext)
         {
             _conversationSerivce = conversationSerivce;
             _connectionMapping = connectionMapping;
             _messageService = messageService;
             _userRepository = userRepository;
+            _hubContext = hubContext;
         }
         public override async Task OnConnectedAsync()
         {
@@ -53,10 +56,11 @@ namespace Social_Media_Application.Hubs
                     .Where(e => onlineUsers.Contains(e.CurrentUserId) || onlineUsers.Contains(e.OtherUserId))
                     .Select(e => new
                     {
-                        userId = e.CurrentUserId == userId ? e.CurrentUserId : e.OtherUserId,
+                        userId = e.CurrentUserId == userId ? e.OtherUserId : e.CurrentUserId,
                         convoId = e.Id
                     });
-
+                await base.OnConnectedAsync();
+                await Task.Delay(100);
                 foreach (var convo in onlineConversations)
                 {
                     await Clients.Caller.NotifyOnline(convo.userId, convo.convoId);
@@ -67,10 +71,8 @@ namespace Social_Media_Application.Hubs
                 Console.WriteLine($"Error Connecting: {ex.Message}");
             }
 
-            await base.OnConnectedAsync();
+            
         }
-
-
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
             try
@@ -104,8 +106,6 @@ namespace Social_Media_Application.Hubs
 
             await base.OnDisconnectedAsync(exception);
         }
-
-
         public async Task SendMessage(MessageCreateDTO message)
         {
             try
@@ -150,6 +150,28 @@ namespace Social_Media_Application.Hubs
             {
                 Console.WriteLine($"Error editing message: {ex.Message}");
             }
+        }
+        public async Task MarkMessageAsRead(int messageId)
+        {
+            try
+            {
+                var userId = Context.UserIdentifier;
+                if (string.IsNullOrEmpty(userId)) return;
+
+                var message = await _messageService.GetMessageByIdAsync(messageId);
+                if (message == null || message.ReceiverId != userId) return;
+
+                await _messageService.MarkMessageAsReadAsync(messageId);
+                await Clients.Group(message.ConversationId.ToString()).MessageMarkedAsRead(message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error Marking message as read: {ex.Message}");
+            }
+        }
+        public async Task SendNotification(string toUserId, string message)
+        {
+            await _hubContext.Clients.User(toUserId).ReceiveNotification(message);
         }
         public async Task DeleteMessage(int messageId)
         {

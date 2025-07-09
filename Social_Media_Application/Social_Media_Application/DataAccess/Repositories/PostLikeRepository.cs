@@ -25,12 +25,16 @@ namespace Social_Media_Application.DataAccess.Repositories
                 PostId = postId,
                 UserId = userId
             };
+
             await AddAsync(postLike);
+
         }
         public async Task RemoveLike(int postId, string userId)
         {
             var model = await GetLikeAsync(postId, userId);
+
             await DeleteAsync(model);
+
         }
         public async Task<List<UserLikeDTO>> GetPostLikesWithUsersAsync(int postId, PostQueryOptions options)
         {
