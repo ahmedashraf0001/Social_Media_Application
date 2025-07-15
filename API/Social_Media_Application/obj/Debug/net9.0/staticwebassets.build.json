@@ -1,0 +1,2700 @@
+{
+  "Version": 1,
+  "Hash": "9oDIyfufW51vSsgw8dosRE2WQhV5nVIgJkoBB+DoIeo=",
+  "Source": "Social_Media_Application",
+  "BasePath": "_content/Social_Media_Application",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Social_Media_Application\\wwwroot",
+      "Source": "Social_Media_Application",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\01840a24-f5f7-44ca-9de9-25cc6eeaa274.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/01840a24-f5f7-44ca-9de9-25cc6eeaa274#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2yk0a0zzzr",
+      "Integrity": "CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\01840a24-f5f7-44ca-9de9-25cc6eeaa274.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0d596fa9-50a2-43b1-8898-4c977c0bba9f.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/0d596fa9-50a2-43b1-8898-4c977c0bba9f#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gliwz515v7",
+      "Integrity": "JK3eUsqj/k8jLRFjQBZBGbk3wD22Bm21ddzQp+0XsvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0d596fa9-50a2-43b1-8898-4c977c0bba9f.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/307be0dc-f1ed-4554-8b0b-eff58e0b7bdf#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x7o7b5q6vb",
+      "Integrity": "XbXcumZfSjthxXIjMrL7VIOhEnpQT+WvwtoeE1ZtJiA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\32da69e7-70d9-460b-a943-86dce6a7f273.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/32da69e7-70d9-460b-a943-86dce6a7f273#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cfkizf039o",
+      "Integrity": "GGme3NnQ3IXk9ltab/UWD7TvUMdfIOMR2zYKFdEG3SU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\32da69e7-70d9-460b-a943-86dce6a7f273.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/37b13aa0-b850-4c0d-aa92-abcfc5dccf2e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "11xq4qw3fa",
+      "Integrity": "S+pdi0ANfQCXfRBYPTRRECI9w/FHVT7ixforFzWBrWM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/4b128d58-20cc-4a3a-81a3-aef26f6f5b55#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/5647a177-1fa0-4e3f-95be-885b6f1c7fbc#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\61945bf8-2975-4f5b-8441-c0e88c05d115.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/61945bf8-2975-4f5b-8441-c0e88c05d115#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\61945bf8-2975-4f5b-8441-c0e88c05d115.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\697c67e8-8cc6-437d-aed3-d898c20f822a.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/697c67e8-8cc6-437d-aed3-d898c20f822a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ob1azbuneg",
+      "Integrity": "NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\697c67e8-8cc6-437d-aed3-d898c20f822a.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/7f50f1e8-335b-42d9-b567-a1f1b81805a8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y9e79ynqbz",
+      "Integrity": "BqXZy0gw3D0mRgFCEs7jB9WyKyo4nmr4kNdfUZPBVM8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\88ac1012-c971-4219-84e1-24c5463e29d1.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/88ac1012-c971-4219-84e1-24c5463e29d1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\88ac1012-c971-4219-84e1-24c5463e29d1.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\8f015fac-5f7a-48e7-900b-90bc7f973ea2.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/8f015fac-5f7a-48e7-900b-90bc7f973ea2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8f015fac-5f7a-48e7-900b-90bc7f973ea2.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\94bd53da-462f-4a12-88be-49c24f50b14a.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/94bd53da-462f-4a12-88be-49c24f50b14a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\94bd53da-462f-4a12-88be-49c24f50b14a.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wxchjjpofe",
+      "Integrity": "PPWcRHfLd7ur2j9aHZ5IwMONMVzpPKASB8J+PZxDxmg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ab72aa05-1244-4023-873a-50a4d1e7b6af.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/ab72aa05-1244-4023-873a-50a4d1e7b6af#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ab72aa05-1244-4023-873a-50a4d1e7b6af.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/ae8429c6-6f1b-40f1-80ff-967edb7dc1df#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rjzqqwlzq9",
+      "Integrity": "id+ABmVLYbTjCmdhDIK6YkzK0fK7q/eX5Bscv07+MM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\b1e6c672-e789-4eed-9dfc-f3b82b08027d.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/b1e6c672-e789-4eed-9dfc-f3b82b08027d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2yk0a0zzzr",
+      "Integrity": "CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b1e6c672-e789-4eed-9dfc-f3b82b08027d.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ccc0065e-8aeb-4d37-98a1-93af59963117.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/ccc0065e-8aeb-4d37-98a1-93af59963117#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ob1azbuneg",
+      "Integrity": "NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ccc0065e-8aeb-4d37-98a1-93af59963117.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\default.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/default#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5bc1hng2h3",
+      "Integrity": "bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\default.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3rfrwaxrwh",
+      "Integrity": "gR9I+R0fBSKKbOYB5BslLCp+gqQ3LwLPzgL674U9Vc8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f2b26acb-95f8-4207-8ea4-362457e877c5.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/f2b26acb-95f8-4207-8ea4-362457e877c5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0l7x6hb9dg",
+      "Integrity": "pD7JQ6qZ4CB/XgeHqgcUu1+++44E70etjBWHGscUfbY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f2b26acb-95f8-4207-8ea4-362457e877c5.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f83f9bc9-1594-4761-b390-af43af0ddec3.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/f83f9bc9-1594-4761-b390-af43af0ddec3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmycvw9u9e",
+      "Integrity": "tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f83f9bc9-1594-4761-b390-af43af0ddec3.png"
+    },
+    {
+      "Identity": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "SourceId": "Social_Media_Application",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\",
+      "BasePath": "_content/Social_Media_Application",
+      "RelativePath": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mdjwq8k67",
+      "Integrity": "V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/01840a24-f5f7-44ca-9de9-25cc6eeaa274.2yk0a0zzzr.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\01840a24-f5f7-44ca-9de9-25cc6eeaa274.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1443469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:43:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2yk0a0zzzr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/01840a24-f5f7-44ca-9de9-25cc6eeaa274.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/01840a24-f5f7-44ca-9de9-25cc6eeaa274.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\01840a24-f5f7-44ca-9de9-25cc6eeaa274.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1443469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:43:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0b44f588-e0a0-4b7b-b8eb-49cb93b1c0df.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0d596fa9-50a2-43b1-8898-4c977c0bba9f.gliwz515v7.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0d596fa9-50a2-43b1-8898-4c977c0bba9f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JK3eUsqj/k8jLRFjQBZBGbk3wD22Bm21ddzQp+0XsvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:29:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gliwz515v7"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0d596fa9-50a2-43b1-8898-4c977c0bba9f.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JK3eUsqj/k8jLRFjQBZBGbk3wD22Bm21ddzQp+0XsvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0d596fa9-50a2-43b1-8898-4c977c0bba9f.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\0d596fa9-50a2-43b1-8898-4c977c0bba9f.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JK3eUsqj/k8jLRFjQBZBGbk3wD22Bm21ddzQp+0XsvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:29:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JK3eUsqj/k8jLRFjQBZBGbk3wD22Bm21ddzQp+0XsvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1167724"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbXcumZfSjthxXIjMrL7VIOhEnpQT+WvwtoeE1ZtJiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XbXcumZfSjthxXIjMrL7VIOhEnpQT+WvwtoeE1ZtJiA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.x7o7b5q6vb.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1167724"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbXcumZfSjthxXIjMrL7VIOhEnpQT+WvwtoeE1ZtJiA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:46:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x7o7b5q6vb"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/307be0dc-f1ed-4554-8b0b-eff58e0b7bdf.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XbXcumZfSjthxXIjMrL7VIOhEnpQT+WvwtoeE1ZtJiA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/32da69e7-70d9-460b-a943-86dce6a7f273.cfkizf039o.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\32da69e7-70d9-460b-a943-86dce6a7f273.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GGme3NnQ3IXk9ltab/UWD7TvUMdfIOMR2zYKFdEG3SU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 15:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cfkizf039o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/32da69e7-70d9-460b-a943-86dce6a7f273.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GGme3NnQ3IXk9ltab/UWD7TvUMdfIOMR2zYKFdEG3SU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/32da69e7-70d9-460b-a943-86dce6a7f273.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\32da69e7-70d9-460b-a943-86dce6a7f273.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403905"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GGme3NnQ3IXk9ltab/UWD7TvUMdfIOMR2zYKFdEG3SU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 15:33:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GGme3NnQ3IXk9ltab/UWD7TvUMdfIOMR2zYKFdEG3SU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.11xq4qw3fa.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S+pdi0ANfQCXfRBYPTRRECI9w/FHVT7ixforFzWBrWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 18:01:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11xq4qw3fa"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S+pdi0ANfQCXfRBYPTRRECI9w/FHVT7ixforFzWBrWM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\37b13aa0-b850-4c0d-aa92-abcfc5dccf2e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165275"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S+pdi0ANfQCXfRBYPTRRECI9w/FHVT7ixforFzWBrWM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 18:01:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S+pdi0ANfQCXfRBYPTRRECI9w/FHVT7ixforFzWBrWM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4b128d58-20cc-4a3a-81a3-aef26f6f5b55.1mdjwq8k67.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\4b128d58-20cc-4a3a-81a3-aef26f6f5b55.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5647a177-1fa0-4e3f-95be-885b6f1c7fbc.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\5647a177-1fa0-4e3f-95be-885b6f1c7fbc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/61945bf8-2975-4f5b-8441-c0e88c05d115.1mdjwq8k67.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\61945bf8-2975-4f5b-8441-c0e88c05d115.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/61945bf8-2975-4f5b-8441-c0e88c05d115.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/61945bf8-2975-4f5b-8441-c0e88c05d115.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\61945bf8-2975-4f5b-8441-c0e88c05d115.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/697c67e8-8cc6-437d-aed3-d898c20f822a.ob1azbuneg.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\697c67e8-8cc6-437d-aed3-d898c20f822a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3613370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ob1azbuneg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/697c67e8-8cc6-437d-aed3-d898c20f822a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/697c67e8-8cc6-437d-aed3-d898c20f822a.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\697c67e8-8cc6-437d-aed3-d898c20f822a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3613370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BqXZy0gw3D0mRgFCEs7jB9WyKyo4nmr4kNdfUZPBVM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BqXZy0gw3D0mRgFCEs7jB9WyKyo4nmr4kNdfUZPBVM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7f50f1e8-335b-42d9-b567-a1f1b81805a8.y9e79ynqbz.jpg",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BqXZy0gw3D0mRgFCEs7jB9WyKyo4nmr4kNdfUZPBVM8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y9e79ynqbz"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7f50f1e8-335b-42d9-b567-a1f1b81805a8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BqXZy0gw3D0mRgFCEs7jB9WyKyo4nmr4kNdfUZPBVM8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/88ac1012-c971-4219-84e1-24c5463e29d1.1mdjwq8k67.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\88ac1012-c971-4219-84e1-24c5463e29d1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/88ac1012-c971-4219-84e1-24c5463e29d1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/88ac1012-c971-4219-84e1-24c5463e29d1.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\88ac1012-c971-4219-84e1-24c5463e29d1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8f015fac-5f7a-48e7-900b-90bc7f973ea2.1mdjwq8k67.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\8f015fac-5f7a-48e7-900b-90bc7f973ea2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8f015fac-5f7a-48e7-900b-90bc7f973ea2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8f015fac-5f7a-48e7-900b-90bc7f973ea2.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\8f015fac-5f7a-48e7-900b-90bc7f973ea2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/94bd53da-462f-4a12-88be-49c24f50b14a.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\94bd53da-462f-4a12-88be-49c24f50b14a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/94bd53da-462f-4a12-88be-49c24f50b14a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/94bd53da-462f-4a12-88be-49c24f50b14a.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\94bd53da-462f-4a12-88be-49c24f50b14a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPWcRHfLd7ur2j9aHZ5IwMONMVzpPKASB8J+PZxDxmg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPWcRHfLd7ur2j9aHZ5IwMONMVzpPKASB8J+PZxDxmg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503.wxchjjpofe.jpg",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPWcRHfLd7ur2j9aHZ5IwMONMVzpPKASB8J+PZxDxmg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wxchjjpofe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9abdcd3e-b45f-4e1f-8e47-061cd13c6503.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPWcRHfLd7ur2j9aHZ5IwMONMVzpPKASB8J+PZxDxmg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a2c716f8-fe93-44f9-985b-a8af387e8f20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\a9d1c5ef-eeb2-4cf5-9ba1-22d004051711.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ab72aa05-1244-4023-873a-50a4d1e7b6af.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ab72aa05-1244-4023-873a-50a4d1e7b6af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ab72aa05-1244-4023-873a-50a4d1e7b6af.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ab72aa05-1244-4023-873a-50a4d1e7b6af.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ab72aa05-1244-4023-873a-50a4d1e7b6af.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "591486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"id+ABmVLYbTjCmdhDIK6YkzK0fK7q/eX5Bscv07+MM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-id+ABmVLYbTjCmdhDIK6YkzK0fK7q/eX5Bscv07+MM0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ae8429c6-6f1b-40f1-80ff-967edb7dc1df.rjzqqwlzq9.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "591486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"id+ABmVLYbTjCmdhDIK6YkzK0fK7q/eX5Bscv07+MM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rjzqqwlzq9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ae8429c6-6f1b-40f1-80ff-967edb7dc1df.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-id+ABmVLYbTjCmdhDIK6YkzK0fK7q/eX5Bscv07+MM0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b1e6c672-e789-4eed-9dfc-f3b82b08027d.2yk0a0zzzr.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\b1e6c672-e789-4eed-9dfc-f3b82b08027d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1443469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 12:52:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2yk0a0zzzr"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b1e6c672-e789-4eed-9dfc-f3b82b08027d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b1e6c672-e789-4eed-9dfc-f3b82b08027d.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\b1e6c672-e789-4eed-9dfc-f3b82b08027d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1443469"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 12:52:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CqThRX6kkPYGnZva5p99w23aNfqfg07qDqJJh5+bgzo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ccc0065e-8aeb-4d37-98a1-93af59963117.ob1azbuneg.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ccc0065e-8aeb-4d37-98a1-93af59963117.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3613370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ob1azbuneg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/ccc0065e-8aeb-4d37-98a1-93af59963117.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/ccc0065e-8aeb-4d37-98a1-93af59963117.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\ccc0065e-8aeb-4d37-98a1-93af59963117.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3613370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NNQmCF9kTvxuzhvBKrxhMUqbVk2HYhatNoLxUfBbXyY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/default.5bc1hng2h3.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5bc1hng2h3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/default.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/default.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\default.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bx5MQGofKCvLVK+eEhHTYUKvCnPf0XE/6eO02vFEPWI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.3rfrwaxrwh.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "795722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR9I+R0fBSKKbOYB5BslLCp+gqQ3LwLPzgL674U9Vc8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3rfrwaxrwh"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR9I+R0fBSKKbOYB5BslLCp+gqQ3LwLPzgL674U9Vc8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\e0d7195b-70ff-4dbb-ae12-003d7ffbc8bd.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "795722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR9I+R0fBSKKbOYB5BslLCp+gqQ3LwLPzgL674U9Vc8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR9I+R0fBSKKbOYB5BslLCp+gqQ3LwLPzgL674U9Vc8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f2b26acb-95f8-4207-8ea4-362457e877c5.0l7x6hb9dg.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f2b26acb-95f8-4207-8ea4-362457e877c5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30274"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pD7JQ6qZ4CB/XgeHqgcUu1+++44E70etjBWHGscUfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 18:01:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0l7x6hb9dg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f2b26acb-95f8-4207-8ea4-362457e877c5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pD7JQ6qZ4CB/XgeHqgcUu1+++44E70etjBWHGscUfbY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f2b26acb-95f8-4207-8ea4-362457e877c5.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f2b26acb-95f8-4207-8ea4-362457e877c5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30274"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pD7JQ6qZ4CB/XgeHqgcUu1+++44E70etjBWHGscUfbY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 18:01:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pD7JQ6qZ4CB/XgeHqgcUu1+++44E70etjBWHGscUfbY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f83f9bc9-1594-4761-b390-af43af0ddec3.kmycvw9u9e.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f83f9bc9-1594-4761-b390-af43af0ddec3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmycvw9u9e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f83f9bc9-1594-4761-b390-af43af0ddec3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f83f9bc9-1594-4761-b390-af43af0ddec3.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f83f9bc9-1594-4761-b390-af43af0ddec3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 17:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLZjAZWP0LagnfIOO7st4fyIJg9glDgfCx88rkZNRtw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.1mdjwq8k67.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mdjwq8k67"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "AssetFile": "C:\\Users\\lyr1c\\Desktop\\ecommerce\\Social_Media_Application\\API\\Social_Media_Application\\wwwroot\\uploads\\f8ecb302-847d-48bb-8582-6d545b762bf4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Jul 2025 10:16:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+xRpGASKBTyHW9UGh5xZqBZYS5rqJMjtI6/lYEd6c0="
+        }
+      ]
+    }
+  ]
+}

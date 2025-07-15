@@ -1,0 +1,197 @@
+/* Feed Layout */
+.feed-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 100px auto 10px auto; /* Added 100px top margin to account for navbar */
+    gap: 20px;
+  }
+  
+  .main-content-feed {
+    flex: 1;
+    min-width: 0; /* Prevents flex item from overflowing */
+  }
+  
+  /* Contacts Sidebar */
+  .contacts-sidebar {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto 24px auto;
+    height: fit-content;
+    position: sticky;
+    top: 100px; /* Changed from 80px to 100px to account for navbar */
+    border: 1px solid #e4e6ea;
+    transition: all 0.3s ease;
+
+  }
+  .contacts-sidebar:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  .contacts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e4e6ea;
+  }
+  
+  .contacts-header h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1c1e21;
+  }
+  
+  .contacts-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .search-btn, .options-btn {
+    background: #f0f2f5;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .search-btn:hover, .options-btn:hover {
+    background: #e4e6ea;
+  }
+  
+  /* Friends Sections */
+  .online-friends, .all-friends {
+    margin-bottom: 20px;
+  }
+  
+  .online-friends h4, .all-friends h4 {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #65676b;
+  }
+  
+  .friends-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    margin-bottom: 4px;
+  }
+  
+  .friend-item:hover {
+    background: #f0f2f5;
+  }
+  
+  .friend-avatar {
+    position: relative;
+    margin-right: 12px;
+  }
+  
+  .friend-avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .online-indicator {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 10px;
+    height: 10px;
+    background: #31a24c;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+  }
+  
+  .friend-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c1e21;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+  }
+  
+  .friend-item.offline .friend-name {
+    color: #65676b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 850px) {
+    .feed-layout {
+      flex-direction: column;
+      padding: 10px;
+      margin-top: 90px; /* Adjusted for mobile navbar height */
+    }
+    
+    .contacts-sidebar {
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 1024px) {
+    .contacts-sidebar {
+      width: 250px;
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .contacts-sidebar {
+      background: #ffffff;
+      color: #1c1e21;
+      border-color: #e4e6ea;
+    }
+    
+    .contacts-header {
+      border-bottom-color: #e4e6ea;
+    }
+    
+    .contacts-header h3 {
+      color: #1c1e21;
+    }
+    
+    .search-btn, .options-btn {
+      background: #f0f2f5;
+    }
+    
+    .search-btn:hover, .options-btn:hover {
+      background: #e4e6ea;
+    }
+    
+    .friend-item:hover {
+      background: #f0f2f5;
+    }
+    
+    .friend-name {
+      color: #1c1e21;
+    }
+    
+    .friend-item.offline .friend-name {
+      color: #65676b;
+    }
+  }
