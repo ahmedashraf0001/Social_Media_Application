@@ -1,70 +1,193 @@
-# Getting Started with Create React App
+# Social Media App - Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React application for the social media platform with real-time features and intuitive user interface.
 
-## Available Scripts
+## 🎨 UI Overview
 
-In the project directory, you can run:
+The frontend is built with React and Redux, featuring a clean, modern design that provides an excellent user experience across all devices. The interface includes real-time updates, smooth animations, and an intuitive navigation system.
 
-### `npm start`
+## 🚀 Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** - Component-based UI library
+- **Redux** - Predictable state container
+- **SignalR Client** - Real-time communication
+- **CSS3** - Modern styling with animations
+- **JavaScript ES6+** - Modern JavaScript features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📱 Features & Screenshots
 
-### `npm test`
+### 1. Main Feed & Post Creation
+The main dashboard displays the user's feed with posts from followed users. Users can create new posts with text content and engage with existing posts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Main Feed](/Project%20Images/UI/UI-1.png)
 
-### `npm run build`
+**Key Features:**
+- Clean, card-based post layout
+- Real-time post updates
+- Inline post creation
+- Video, photo, and article post types
+- Engagement metrics (likes, comments)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Post Details & Interaction
+Detailed post view with enhanced interaction capabilities and rich content display.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Post Details](/Project%20Images/UI/UI-2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Key Features:**
+- Detailed post view with full content
+- Interactive comment system
+- Real-time engagement updates
+- Post sharing capabilities
+- Enhanced content formatting
+- User interaction tracking
 
-### `npm run eject`
+### 3. Real-time Notifications
+Users receive instant notifications for all social interactions, keeping them engaged and informed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Notifications](/Project%20Images/UI/UI-3.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Key Features:**
+- Real-time notification updates
+- Multiple notification types:
+  - New followers
+  - Post likes
+  - Comments on posts
+  - Direct messages
+- Notification badges and indicators
+- Mark as read functionality
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. User Profiles
+Comprehensive user profiles with customizable information and activity tracking.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![User Profile](/Project%20Images/UI/UI-4.png) 
 
-## Learn More
+**Key Features:**
+- Customizable profile information
+- Cover photo and avatar support
+- Follower/following counts
+- Location and bio information
+- Activity timeline
+- Profile editing capabilities
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 5. Post Creation Interface
+Intuitive post creation with multiple content types and formatting options.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Post Creation](/Project%20Images/UI/UI-5.png)
 
-### Code Splitting
+**Key Features:**
+- Rich text editor
+- Character count (2,000 limit)
+- Media attachment support
+- Post privacy settings
+- Draft saving
+- Preview functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 6. Search Functionality
+Real-time search across users and posts with instant results.
 
-### Analyzing the Bundle Size
+![Search](/Project%20Images/UI/UI-6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Key Features:**
+- Real-time search results
+- User and post filtering
+- Search history
+- Keyboard navigation
+- Search suggestions
 
-### Making a Progressive Web App
+## 🛠️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-### Advanced Configuration
+### Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/social-media-app.git
+   cd social-media-app/SocialMediaApp.UI
+   ```
 
-### Deployment
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. **Configure environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_SIGNALR_URL=http://localhost:5000/chatHub
+   ```
 
-### `npm run build` fails to minify
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🎯 Key Components
+
+### Authentication
+- Login/Register forms with validation
+- JWT token management
+- Protected routes
+- Automatic token refresh
+
+### Feed Management
+- Post creation and editing
+- Real-time post updates
+- Infinite scrolling
+- Post filtering and sorting
+
+### Social Features
+- Like/unlike functionality
+- Comment system with replies
+- Follow/unfollow users
+- User discovery
+
+### Real-time Features
+- Live notifications
+- Instant messaging
+- Online status indicators
+- Typing indicators
+
+### Search System
+- Real-time search results
+- Debounced search queries
+- Search history
+- Advanced filtering
+
+## 🔧 State Management
+
+The application uses Redux for state management to handle the application's global state efficiently across all components.
+
+## 📱 Responsive Design
+
+The application is fully responsive and works seamlessly across:
+- Desktop computers
+- Tablets
+- Mobile phones
+- Various screen sizes and orientations
+
+## 🔄 Real-time Features
+
+The application integrates with SignalR for real-time functionality:
+- Live notifications
+- Instant messaging
+- Real-time post updates
+- Online user status
+- Typing indicators
+
+## 📝 Available Scripts
+
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+
