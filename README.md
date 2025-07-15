@@ -31,27 +31,6 @@ This project is a complete social media platform that replicates the core functi
 - **Modern CSS** - Responsive and interactive design
 - **Real-time Integration** - SignalR client for live updates
 
-## 🏗️ Architecture
-
-The project follows a clean architecture pattern with clear separation of concerns:
-
-```
-SocialMediaApp/
-├── SocialMediaApp.API/          # Backend API
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Services/
-│   ├── Hubs/                   # SignalR hubs
-│   └── Data/                   # Entity Framework context
-└── SocialMediaApp.UI/          # Frontend React app
-    ├── src/
-    │   ├── components/
-    │   ├── store/              # Redux store
-    │   ├── services/
-    │   └── utils/
-    └── public/
-```
-
 ## 🌟 Core Functionality
 
 ### User Authentication & Authorization
